@@ -1,8 +1,4 @@
 import { Link } from "react-router-dom";
-import heroFence from "@/assets/hero-fence.jpg";
-import metalFence from "@/assets/metal-fence.jpg";
-import vinylFence from "@/assets/vinyl-fence.jpg";
-import woodFence from "@/assets/wood-fence.jpg";
 
 const products = [
   {
@@ -22,19 +18,19 @@ const products = [
   {
     id: "wire-mesh",
     title: "Wire Mesh Fence / Weld Mesh Fence / Heras Fence",
-    image: woodFence,
+    image: "https://th.bing.com/th/id/OIP.bK4Z7_oDGcSjmVY-73tG7wHaFj?w=230&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
     description: "Lightweight insulated panels with rigid core providing excellent thermal insulation for roofs, walls, and cold rooms.",
   },
   {
     id: "fencing-panels",
     title: "Fencing Panels & Hoardings",
-    image: metalFence,
+    image: "https://static.wixstatic.com/media/647e2d_5e57f713078d4d8fa0c6f4254793b467~mv2.jpg/v1/fill/w_490,h_327,al_c,q_80,usm_0.66_1.00_0.01/647e2d_5e57f713078d4d8fa0c6f4254793b467~mv2.jpg",
     description: "Comprehensive fencing solutions including temporary fencing panels, hoardings, and complete accessories for construction and security.",
   },
   {
     id: "pvc-fence",
     title: "PVC Eco Fence",
-    image: heroFence,
+    image: "https://th.bing.com/th/id/OIP.mVouMujOUdUe8jqvq9wc3wHaDV?w=335&h=157&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
     description: "Metal decking profiles and structural purlins designed for multi-story buildings, mezzanines, and industrial applications.",
   },
 ];
