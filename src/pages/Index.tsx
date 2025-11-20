@@ -5,6 +5,7 @@ import Contact from "@/components/Contact";
 import ProductShowcase from "@/components/ProductShowcase";
 import ProductsShowcase from "@/components/ProductsShowcase";
 import Testimonials from "@/components/Testimonials";
+import FloatingActionButtons from "@/components/FloatingActionButtons";
 
 const Index = () => {
   return (
@@ -15,6 +16,7 @@ const Index = () => {
       <Benefits />
       <Testimonials />
       <Contact />
+      <FloatingActionButtons />
     </SiteLayout>
   );
 };
