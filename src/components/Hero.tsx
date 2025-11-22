@@ -3,6 +3,7 @@ import metalFence from "@/assets/metal-fence.jpg";
 import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 // Hero slides configuration: 2 fence slides + 2 metals slides
 const heroSlides = [
@@ -148,18 +149,18 @@ const Hero = () => {
                 {currentSlideData.description}
               </p>
               <div className="mt-10 flex flex-col gap-4 sm:flex-row">
-                <a
-                  href={currentSlideData.primaryButton.link}
+                <Link
+                  to={currentSlideData.primaryButton.link}
                   className="inline-flex items-center justify-center rounded-md bg-[#2E6A92] px-8 py-4 text-base font-semibold uppercase tracking-wide text-white shadow-md transition hover:bg-[#245676]"
                 >
                   {currentSlideData.primaryButton.text}
-                </a>
-                <a
-                  href={currentSlideData.secondaryButton.link}
+                </Link>
+                <Link
+                  to={currentSlideData.secondaryButton.link}
                   className="inline-flex items-center justify-center rounded-md bg-[#4A5459] px-8 py-4 text-base font-semibold uppercase tracking-wide text-white shadow-md transition hover:bg-[#374047]"
                 >
                   {currentSlideData.secondaryButton.text}
-                </a>
+                </Link>
               </div>
             </div>
 
