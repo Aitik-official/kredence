@@ -6,10 +6,26 @@ import { useEffect, useState, useMemo } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { products } from "@/pages/ProductsPage";
 
-const productCategories = [
-  { label: "Fence", to: "/products" },
-  { label: "Metals", to: "/metals" },
-];
+// Filter products into Fence and Metals categories
+const fenceProducts = products.filter(
+  (product) => 
+    product.category === "Fencing" || 
+    product.category === "Mesh" ||
+    product.id === "fencing-panels" ||
+    product.id === "pvc-fence" ||
+    product.id === "wire-mesh" ||
+    product.id === "chain-link-fence"
+);
+
+const metalsProducts = products.filter(
+  (product) => 
+    product.category !== "Fencing" && 
+    product.category !== "Mesh" &&
+    product.id !== "fencing-panels" &&
+    product.id !== "pvc-fence" &&
+    product.id !== "wire-mesh" &&
+    product.id !== "chain-link-fence"
+);
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -148,20 +164,46 @@ const Navbar = () => {
               
               {/* Dropdown Content */}
               <div
-                className={`absolute top-full left-0 mt-2 w-56 rounded-xl bg-white shadow-2xl border border-gray-100 overflow-hidden transition-all duration-300 z-50 ${
+                className={`absolute top-full right-0 mt-2 w-[700px] rounded-xl bg-white shadow-2xl border border-gray-100 overflow-hidden transition-all duration-300 z-50 ${
                   isProductsHovered ? "opacity-100 visible translate-y-0" : "opacity-0 invisible -translate-y-2"
                 }`}
               >
-                <div className="py-2">
-                  {productCategories.map((category) => (
-                    <Link
-                      key={category.label}
-                      to={category.to}
-                      className="block px-6 py-3 text-lg font-semibold text-[#4A5459] transition-all duration-200 hover:bg-[#2E6A92]/5 hover:text-[#2E6A92] hover:pl-8"
-                    >
-                      {category.label}
-                    </Link>
-                  ))}
+                <div className="grid grid-cols-2 divide-x divide-gray-100">
+                  {/* Fence Section */}
+                  <div className="py-2">
+                    <div className="px-6 py-2 text-xs font-bold uppercase tracking-wider text-[#2E6A92] bg-[#2E6A92]/5 border-b border-gray-100">
+                      Fence
+                    </div>
+                    <div className="py-1 max-h-[500px] overflow-y-auto">
+                      {fenceProducts.map((product) => (
+                        <Link
+                          key={product.id}
+                          to={`/products/${product.id}`}
+                          className="block px-6 py-2.5 text-sm text-[#4A5459] transition-all duration-200 hover:bg-[#2E6A92]/5 hover:text-[#2E6A92] hover:pl-8"
+                        >
+                          {product.title}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Metals Section */}
+                  <div className="py-2">
+                    <div className="px-6 py-2 text-xs font-bold uppercase tracking-wider text-[#2E6A92] bg-[#2E6A92]/5 border-b border-gray-100">
+                      Metals
+                    </div>
+                    <div className="py-1 max-h-[500px] overflow-y-auto">
+                      {metalsProducts.map((product) => (
+                        <Link
+                          key={product.id}
+                          to={`/products/${product.id}`}
+                          className="block px-6 py-2.5 text-sm text-[#4A5459] transition-all duration-200 hover:bg-[#2E6A92]/5 hover:text-[#2E6A92] hover:pl-8"
+                        >
+                          {product.title}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -263,15 +305,33 @@ const Navbar = () => {
             {/* Products Dropdown for Mobile */}
             <div className="space-y-2">
               <div className="py-2 text-lg font-semibold text-[#4A5459]">Products</div>
-              <div className="pl-4 space-y-2">
-                {productCategories.map((category) => (
+              
+              {/* Fence Section */}
+              <div className="pl-4 space-y-1">
+                <div className="py-1 text-xs font-bold uppercase tracking-wider text-[#2E6A92]">Fence</div>
+                {fenceProducts.map((product) => (
                   <NavLink
-                    key={category.label}
-                    to={category.to}
-                    className="block py-2 text-lg text-[#4A5459] transition-colors hover:text-[#2E6A92]"
+                    key={product.id}
+                    to={`/products/${product.id}`}
+                    className="block py-1.5 pl-4 text-sm text-[#4A5459] transition-colors hover:text-[#2E6A92]"
                     activeClassName="text-[#2E6A92]"
                   >
-                    {category.label}
+                    {product.title}
+                  </NavLink>
+                ))}
+              </div>
+
+              {/* Metals Section */}
+              <div className="pl-4 space-y-1 mt-3">
+                <div className="py-1 text-xs font-bold uppercase tracking-wider text-[#2E6A92]">Metals</div>
+                {metalsProducts.map((product) => (
+                  <NavLink
+                    key={product.id}
+                    to={`/products/${product.id}`}
+                    className="block py-1.5 pl-4 text-sm text-[#4A5459] transition-colors hover:text-[#2E6A92]"
+                    activeClassName="text-[#2E6A92]"
+                  >
+                    {product.title}
                   </NavLink>
                 ))}
               </div>

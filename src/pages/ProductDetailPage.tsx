@@ -14,12 +14,14 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
+import QuoteRequestModal from "@/components/QuoteRequestModal";
 
 const ProductDetailPage = () => {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [quantity, setQuantity] = useState(1);
+  const [isQuoteModalOpen, setIsQuoteModalOpen] = useState(false);
   
   const product = products.find((p) => p.id === id);
 
@@ -249,11 +251,11 @@ const ProductDetailPage = () => {
               {/* Contact Buttons */}
               <div className="flex gap-4">
                 <Button
-                  asChild
+                  onClick={() => setIsQuoteModalOpen(true)}
                   className="flex-1 bg-gradient-accent hover:shadow-glow text-white"
                   size="lg"
                 >
-                  <Link to="/contact">Request Quote</Link>
+                  Request Quote
                 </Button>
                 <Button
                   asChild
@@ -329,6 +331,12 @@ const ProductDetailPage = () => {
           )}
         </div>
       </section>
+      <QuoteRequestModal
+        open={isQuoteModalOpen}
+        onOpenChange={setIsQuoteModalOpen}
+        productTitle={product.title}
+        quantity={quantity}
+      />
     </SiteLayout>
   );
 };

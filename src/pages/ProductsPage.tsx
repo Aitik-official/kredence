@@ -12,13 +12,13 @@ import woodFence from "@/assets/wood-fence.jpg";
 
 // Product images from external sources for metal products
 const productImages = {
-  "gi-coils": "https://5.imimg.com/data5/SELLER/Default/2021/1/MB/EI/TO/8396883/gi-coils-500x500.jpg",
+  "gi-coils": "/gicoils.jpeg",
   "ppgi-coils": "https://tse4.mm.bing.net/th/id/OIP.5OP1iIcHK5ASGZh1lGhHEgHaE8?rs=1&pid=ImgDetMain&o=7&rm=3",
   "sandwich-panels": "https://5.imimg.com/data5/RT/ZQ/EO/SELLER-2020121/30-mm-puf-insulated-sandwich-roof-panel-500x500.jpg",
   "corrugated-sheets": "https://tse3.mm.bing.net/th/id/OIP.s2DkxQgR68QZJ0fYTlJ06QHaGK?pid=ImgDet&w=184&h=153&c=7&dpr=1.3&o=7&rm=3",
   "decking-sheets": "https://tse3.mm.bing.net/th/id/OIP.mzsttxGsOjsheboi-5IW8wHaE0?rs=1&pid=ImgDetMain&o=7&rm=3",
   "purlins": "https://tse3.mm.bing.net/th/id/OIP.DDTjoadU-onPFdrs1hPYfgHaFL?rs=1&pid=ImgDetMain&o=7&rm=3",
-  "drywall": "https://th.bing.com/th/id/OIP.VJlP5V5Z41URyMlTqADDEwHaE3?w=285&h=187&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
+  "drywall": "/dry1.jpeg",
   "flashing": "https://th.bing.com/th/id/OIP.6bDleqwyT4ZuyLP3qZ0WxAHaEK?w=319&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
   "skylights": "https://th.bing.com/th/id/OIP.h2UKoc1JmJPoDGs3kxpgNgHaFj?w=233&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
 };
@@ -102,11 +102,10 @@ export const products = [
     icon: Building2,
     title: "Insulated Sandwich Panels",
     code: "C",
-    image: productImages["sandwich-panels"],
+    image: "/sand1.jpeg",
     images: [
-      "https://th.bing.com/th/id/OIP.zglpVJMbPBZdS--d-FNDygHaHa?w=168&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
-      "https://th.bing.com/th/id/OIP.EgCzON1lJ9-qXOUJkZ5J3gHaHa?w=184&h=184&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
-      "https://th.bing.com/th/id/OIP.Hl6jR62Nd5Ehq-ex82xRMwHaEK?w=300&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+      "/sand1.jpeg",
+      "/sand2.jpeg"
     ],
     category: "Panels",
     fullDescription: "Roof, Wall Panels & Cold Room Solutions with PUR/PIR Insulation",
@@ -247,11 +246,11 @@ export const products = [
     icon: Fence,
     title: "Fencing Panels & Hoardings",
     code: "G",
-    image: "https://tse1.mm.bing.net/th/id/OIP.W1Il4pQctFxGwHeplS2MagHaHa?pid=ImgDet&w=185&h=185&c=7&dpr=1.3&o=7&rm=3",
+    image: "/fencing1.jpeg",
     images: [
-      "https://th.bing.com/th/id/OIP.XXDc-v68-QigaD7eMQ19EwHaEZ?w=291&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
-      "https://www.davisonfencing.co.uk/wp-content/uploads/2020/06/HoardingTempworks-9.jpg",
-      "https://tse1.mm.bing.net/th/id/OIP._S4JfdXS1TCmrW_xaRu1igHaFF?w=536&h=368&rs=1&pid=ImgDetMain&o=7&rm=3"
+      "/fencing panels 2.jpeg",
+      "/fencing1.jpeg",
+      "/fencong panels 3.jpeg"
     ],
     category: "Fencing",
     fullDescription: "Temporary Fencing Panels (Discontinuous) and Continuous Corrugated Fencing with complete accessories. Metal and machine-discontinuous fencing panels primarily used for construction sites.",
@@ -290,8 +289,8 @@ export const products = [
     image: "https://th.bing.com/th/id/OIP._ZIpTl4QZ6GUyPj7jBb65QHaEe?w=237&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
     images: [
       "https://th.bing.com/th/id/OIP._ZIpTl4QZ6GUyPj7jBb65QHaEe?w=237&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
-      "https://th.bing.com/th/id/OIP.wayHfn8holcqlmcPPbpItQHaHa?w=193&h=193&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
-      "https://tse4.mm.bing.net/th/id/OIP.VnUTukMbrEizLK_nguDu5gHaHa?pid=ImgDet&w=183&h=183&c=7&dpr=1.3&o=7&rm=3"
+      "/pvceco2.jpeg",
+      "/pvceco1.jpeg"
     ],
     category: "Fencing",
     fullDescription: "Best quality PVC ECO Fence available throughout UAE. Height range from 2.4mtr to 5.0mtr, customizable to customer specifications.",
@@ -506,11 +505,10 @@ export const products = [
     icon: Building2,
     title: "Drywall Partition Systems",
     code: "J",
-    image: productImages["drywall"],
+    image: "/dry1.jpeg",
     images: [
-      "https://th.bing.com/th/id/OIP.VJlP5V5Z41URyMlTqADDEwHaE3?w=285&h=187&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
-      "https://th.bing.com/th/id/OIP.Uwy-4s1IHIiXEEnf3icLOwHaEK?w=315&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
-      "https://th.bing.com/th/id/OIP.jLNfLPnK6OcIbQbRhyltgQAAAA?w=170&h=132&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+      "/dry1.jpeg",
+      "/dry2.jpeg"
     ],
     category: "Systems",
     fullDescription: "Drywall Partition System Components comprising of Stud, Track, Furring Channel, Main Channel & Wall Angles. Metal partition system composed of ceiling, studs, and tracks.",

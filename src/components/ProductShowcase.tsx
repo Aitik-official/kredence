@@ -6,7 +6,7 @@ const products = [
     title: "GI Mill Finish Coils",
     description:
       "High-quality galvanized steel coils and sheets designed for durability and performance in various industrial applications including transportation, construction, and home appliances.",
-    image: "https://5.imimg.com/data5/SELLER/Default/2021/1/MB/EI/TO/8396883/gi-coils-500x500.jpg",
+    image: "/gicoils.jpeg",
     highlight: true,
   },
   {
@@ -24,7 +24,7 @@ const products = [
   {
     id: "fencing-panels",
     title: "Fencing Panels & Hoardings",
-    image: "https://static.wixstatic.com/media/647e2d_5e57f713078d4d8fa0c6f4254793b467~mv2.jpg/v1/fill/w_490,h_327,al_c,q_80,usm_0.66_1.00_0.01/647e2d_5e57f713078d4d8fa0c6f4254793b467~mv2.jpg",
+    image: "/fencing1.jpeg",
     description: "Comprehensive fencing solutions including temporary fencing panels, hoardings, and complete accessories for construction and security.",
   },
   {
