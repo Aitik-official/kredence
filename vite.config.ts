@@ -15,4 +15,23 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  optimizeDeps: {
+    esbuildOptions: {
+      target: "es2020",
+      logOverride: { "this-is-undefined-in-esm": "silent" },
+    },
+  },
+  build: {
+    target: "es2020",
+    minify: "esbuild",
+    rollupOptions: {
+      output: {
+        manualChunks: undefined,
+      },
+    },
+    esbuildOptions: {
+      target: "es2020",
+      logOverride: { "this-is-undefined-in-esm": "silent" },
+    },
+  },
 }));

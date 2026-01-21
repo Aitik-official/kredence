@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import SiteLayout from "@/components/SiteLayout";
 import PageHeader from "@/components/PageHeader";
 import Contact from "@/components/Contact";
@@ -70,6 +71,32 @@ const faqItems = [
 ];
 
 const ContactPage = () => {
+  useEffect(() => {
+    // Update document title
+    document.title = "Contact us for fence supplier– www. kredencesteel.com";
+    
+    // Update meta description
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute(
+        "content",
+        "Contact our expert fence supplier team in Dubai for quotes, product details, and professional fencing solutions for all projects."
+      );
+    }
+    
+    // Update or create meta keywords
+    let metaKeywords = document.querySelector('meta[name="keywords"]');
+    if (!metaKeywords) {
+      metaKeywords = document.createElement("meta");
+      metaKeywords.setAttribute("name", "keywords");
+      document.head.appendChild(metaKeywords);
+    }
+    metaKeywords.setAttribute(
+      "content",
+      "Fencing Suppliers in Dubai,UAE, About Fence Trades in Oman, Fencing Panels and Hoardings Supplier in Dubai, Pvc eco fence supplier in Dubai, Heras Fence contractor in Dubai, Chain link fence supplier in UAE, GI Mill Finish Coils supplier in Dubai, PPGI Color Coated Coils Supplier in Dubai, Insulated Sandwich Panels Supplier in Dubai, Corrugated Color Sheets suppliers in Dubai, Decking Sheets suppliers in Dubai, Z and C Purlins Supplier in Dubai, Roofing Flashings and Gutters supplier in Dubai, GRP Translucent Sheets Skylights supplier in Dubai, Contact us for fence supplier."
+    );
+  }, []);
+
   return (
     <SiteLayout>
       <PageHeader
@@ -217,7 +244,7 @@ const ContactPage = () => {
               variant="secondary"
               className="bg-secondary text-secondary-foreground hover:shadow-glow px-8 py-6 h-auto rounded-xl"
             >
-              <a href="mailto:Kredencesteel@gmail.com" className="font-semibold">
+              <a href="mailto:Info@kredencesteel.com" className="font-semibold">
                 Email our team
               </a>
             </Button>

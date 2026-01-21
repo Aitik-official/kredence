@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import SiteLayout from "@/components/SiteLayout";
 import PageHeader from "@/components/PageHeader";
 import heroFence from "@/assets/hero-fence.jpg";
@@ -70,6 +71,32 @@ const supportedStandards = [
 ];
 
 const WhyUsPage = () => {
+  useEffect(() => {
+    // Update document title
+    document.title = "About Fence Trades in Oman – www.kredencesteel.com";
+    
+    // Update meta description
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute(
+        "content",
+        "Fence Trades in Oman is a trusted supplier of high-quality fencing solutions, including chain link, GI & security fencing for residential and industrial projects."
+      );
+    }
+    
+    // Update or create meta keywords
+    let metaKeywords = document.querySelector('meta[name="keywords"]');
+    if (!metaKeywords) {
+      metaKeywords = document.createElement("meta");
+      metaKeywords.setAttribute("name", "keywords");
+      document.head.appendChild(metaKeywords);
+    }
+    metaKeywords.setAttribute(
+      "content",
+      "Fencing Suppliers in Dubai,UAE, About Fence Trades in Oman, Fencing Panels and Hoardings Supplier in Dubai, Pvc eco fence supplier in Dubai, Heras Fence contractor in Dubai, Chain link fence supplier in UAE, GI Mill Finish Coils supplier in Dubai, PPGI Color Coated Coils Supplier in Dubai, Insulated Sandwich Panels Supplier in Dubai, Corrugated Color Sheets suppliers in Dubai, Decking Sheets suppliers in Dubai, Z and C Purlins Supplier in Dubai, Roofing Flashings and Gutters supplier in Dubai, GRP Translucent Sheets Skylights supplier in Dubai, Contact us for fence supplier."
+    );
+  }, []);
+
   return (
     <SiteLayout>
       <PageHeader

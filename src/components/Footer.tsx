@@ -99,7 +99,7 @@ const Footer = () => {
               <li className="flex items-start gap-3">
                 <Mail className="mt-1 h-5 w-5 text-white/60" />
                 <span>
-                  Kredencesteel@gmail.com
+                  Info@kredencesteel.com
                 </span>
               </li>
               <li className="flex items-start gap-3">
