@@ -80,7 +80,7 @@ const ContactPage = () => {
     if (metaDescription) {
       metaDescription.setAttribute(
         "content",
-        "Contact our expert fence supplier team in Dubai for quotes, product details, and professional fencing solutions for all projects."
+        " Contact our expert fence supplier team in Dubai for quotes, product details, and professional fencing solutions for all projects."
       );
     }
     

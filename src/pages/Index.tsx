@@ -18,7 +18,7 @@ const Index = () => {
     if (metaDescription) {
       metaDescription.setAttribute(
         "content",
-        "Trusted fencing suppliers in Dubai and UAE offering chain link, GI, PVC coated & security fencing. Quality fencing solutions with fast delivery across UAE."
+        " Trusted fencing suppliers in Dubai and UAE offering chain link, GI, PVC coated & security fencing. Quality fencing solutions with fast delivery across UAE. "
       );
     }
     

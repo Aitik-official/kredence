@@ -80,7 +80,7 @@ const WhyUsPage = () => {
     if (metaDescription) {
       metaDescription.setAttribute(
         "content",
-        "Fence Trades in Oman is a trusted supplier of high-quality fencing solutions, including chain link, GI & security fencing for residential and industrial projects."
+        " Fence Trades in Oman is a trusted supplier of high-quality fencing solutions, including chain link, GI & security fencing for residential and industrial projects."
       );
     }
     

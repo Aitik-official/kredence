@@ -86,7 +86,7 @@ const ProductDetailPage = () => {
       if (metaDescription) {
         metaDescription.setAttribute(
           "content",
-          "Leading fencing panels and hoardings supplier in Dubai offering durable, high-quality solutions for construction sites, industrial and commercial projects."
+          " Leading fencing panels and hoardings supplier in Dubai offering durable, high-quality solutions for construction sites, industrial and commercial projects."
         );
       }
       
@@ -110,7 +110,7 @@ const ProductDetailPage = () => {
       if (metaDescription) {
         metaDescription.setAttribute(
           "content",
-          "PVC eco fence supplier in Dubai delivering high-quality, eco-friendly and long-lasting fencing systems across UAE."
+          " PVC eco fence supplier in Dubai delivering high-quality, eco-friendly and long-lasting fencing systems across UAE."
         );
       }
       
@@ -134,7 +134,7 @@ const ProductDetailPage = () => {
       if (metaDescription) {
         metaDescription.setAttribute(
           "content",
-          "Reliable Heras fence contractor in Dubai supplying and installing high-quality temporary fencing across UAE."
+          " Reliable Heras fence contractor in Dubai supplying and installing high-quality temporary fencing across UAE. "
         );
       }
       
@@ -158,7 +158,7 @@ const ProductDetailPage = () => {
       if (metaDescription) {
         metaDescription.setAttribute(
           "content",
-          "Chain link fence supplier in UAE specializing in GI and PVC coated fencing with professional supply and installation services."
+          " Chain link fence supplier in UAE specializing in GI and PVC coated fencing with professional supply and installation services."
         );
       }
       
@@ -182,7 +182,7 @@ const ProductDetailPage = () => {
       if (metaDescription) {
         metaDescription.setAttribute(
           "content",
-          "Trusted GI mill finish coils supplier in Dubai offering high-quality galvanized steel coils for industrial, construction and manufacturing applications."
+          " Trusted GI mill finish coils supplier in Dubai offering high-quality galvanized steel coils for industrial, construction and manufacturing applications."
         );
       }
       
@@ -206,7 +206,7 @@ const ProductDetailPage = () => {
       if (metaDescription) {
         metaDescription.setAttribute(
           "content",
-          "PPGI color coated coils supplier in Dubai delivering consistent quality steel coils with competitive pricing and timely supply."
+          " PPGI color coated coils supplier in Dubai delivering consistent quality steel coils with competitive pricing and timely supply."
         );
       }
       
@@ -230,7 +230,7 @@ const ProductDetailPage = () => {
       if (metaDescription) {
         metaDescription.setAttribute(
           "content",
-          "Insulated sandwich panels supplier in Dubai delivering cost-effective roofing and wall panel solutions for construction projects."
+          " Insulated sandwich panels supplier in Dubai delivering cost-effective roofing and wall panel solutions for construction projects."
         );
       }
       
@@ -254,7 +254,7 @@ const ProductDetailPage = () => {
       if (metaDescription) {
         metaDescription.setAttribute(
           "content",
-          "We are a reliable Heras Fence Supplier in Dubai, UAE, offering high-quality temporary Heras fencing solutions for construction sites, events, industrial areas, and security applications. Our Heras fences are manufactured using heavy-duty galvanized steel, ensuring strength, stability, and long-term outdoor performance in UAE weather conditions."
+          " We are a reliable Heras Fence Supplier in Dubai, UAE, offering high-quality temporary Heras fencing solutions for construction sites, events, industrial areas, and security applications. Our Heras fences are manufactured using heavy-duty galvanized steel, ensuring strength, stability, and long-term outdoor performance in UAE weather conditions. "
         );
       }
       
@@ -278,7 +278,7 @@ const ProductDetailPage = () => {
       if (metaDescription) {
         metaDescription.setAttribute(
           "content",
-          "Trusted decking sheets suppliers in Dubai offering high-quality steel decking sheets for commercial, industrial and construction projects."
+          " Trusted decking sheets suppliers in Dubai offering high-quality steel decking sheets for commercial, industrial and construction projects."
         );
       }
       
@@ -302,7 +302,7 @@ const ProductDetailPage = () => {
       if (metaDescription) {
         metaDescription.setAttribute(
           "content",
-          "Reliable Z and C purlins supplier in Dubai supplying precision-engineered purlins for warehouses and steel structures."
+          " Reliable Z and C purlins supplier in Dubai supplying precision-engineered purlins for warehouses and steel structures."
         );
       }
       
@@ -326,7 +326,7 @@ const ProductDetailPage = () => {
       if (metaDescription) {
         metaDescription.setAttribute(
           "content",
-          "Trusted drywall partition systems supplier in Dubai offering high-quality gypsum partitions for commercial and residential interiors."
+          " Trusted drywall partition systems supplier in Dubai offering high-quality gypsum partitions for commercial and residential interiors. "
         );
       }
       
@@ -350,7 +350,7 @@ const ProductDetailPage = () => {
       if (metaDescription) {
         metaDescription.setAttribute(
           "content",
-          "Roofing flashings and gutters supplier in Dubai delivering cost-effective drainage and roofing accessories with timely supply."
+          " Roofing flashings and gutters supplier in Dubai delivering cost-effective drainage and roofing accessories with timely supply."
         );
       }
       
@@ -374,7 +374,7 @@ const ProductDetailPage = () => {
       if (metaDescription) {
         metaDescription.setAttribute(
           "content",
-          "Trusted GRP translucent sheets and skylights supplier in Dubai offering durable, UV-resistant daylighting solutions for industrial buildings."
+          " Trusted GRP translucent sheets and skylights supplier in Dubai offering durable, UV-resistant daylighting solutions for industrial buildings."
         );
       }
       
