@@ -86,10 +86,13 @@ const ProductPageTemplate = ({ product, metaTitle, metaDescription, metaKeywords
   useEffect(() => {
     document.title = metaTitle;
     
-    const metaDescriptionEl = document.querySelector('meta[name="description"]');
-    if (metaDescriptionEl) {
-      metaDescriptionEl.setAttribute("content", metaDescription);
+    let metaDescriptionEl = document.querySelector('meta[name="description"]');
+    if (!metaDescriptionEl) {
+      metaDescriptionEl = document.createElement("meta");
+      metaDescriptionEl.setAttribute("name", "description");
+      document.head.appendChild(metaDescriptionEl);
     }
+    metaDescriptionEl.setAttribute("content", metaDescription);
     
     let metaKeywordsEl = document.querySelector('meta[name="keywords"]');
     if (!metaKeywordsEl) {
