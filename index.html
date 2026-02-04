@@ -32,6 +32,27 @@
   <meta name="twitter:site" content="@Lovable" />
   <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
   <meta name="google-site-verification" content="__4gu7AflAZ_uUyc0VHZA6NpPGewicRX6DaPvs-Cg0Q" />
+  
+  <!-- Pre-hydration SEO Meta Tags Update -->
+  <script>
+    (function() {
+      var path = window.location.pathname.toLowerCase();
+      var titleEl = document.querySelector('title');
+      var metaDesc = document.querySelector('meta[name="description"]');
+      var metaKeywords = document.querySelector('meta[name="keywords"]');
+      var ogTitle = document.querySelector('meta[property="og:title"]');
+      var ogDesc = document.querySelector('meta[property="og:description"]');
+      
+      // Fencing Panels and Hoardings Page
+      if (path.includes('fencing-panels-hoarding')) {
+        if (titleEl) titleEl.textContent = ' Fencing Panels and Hoardings Supplier in Dubai– kredencesteel.com ';
+        if (metaDesc) metaDesc.setAttribute('content', ' Leading fencing panels and hoardings supplier in Dubai offering durable, high-quality solutions for construction sites, industrial and commercial projects.');
+        if (metaKeywords) metaKeywords.setAttribute('content', ' Fencing Suppliers in Dubai,UAE, About Fence Trades in Oman, Fencing Panels and Hoardings Supplier in Dubai, Pvc eco fence supplier in Dubai, Heras Fence contractor in Dubai, Chain link fence supplier in UAE, GI Mill Finish Coils supplier in Dubai, PPGI Color Coated Coils Supplier in Dubai, Insulated Sandwich Panels Supplier in Dubai, Corrugated Color Sheets suppliers in Dubai, Decking Sheets suppliers in Dubai, Z and C Purlins Supplier in Dubai, Roofing Flashings and Gutters supplier in Dubai, GRP Translucent Sheets Skylights supplier in Dubai, Contact us for fence supplier.');
+        if (ogTitle) ogTitle.setAttribute('content', ' Fencing Panels and Hoardings Supplier in Dubai– kredencesteel.com ');
+        if (ogDesc) ogDesc.setAttribute('content', ' Leading fencing panels and hoardings supplier in Dubai offering durable, high-quality solutions for construction sites, industrial and commercial projects.');
+      }
+    })();
+  </script>
 </head>
 
 <body>
