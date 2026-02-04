@@ -52,7 +52,7 @@ const ProductShowcase = () => {
             return (
               <Link
                 key={product.title}
-                to={`/products/${product.id}`}
+                to={`/${product.id}`}
                 className={`group relative aspect-[4/3] overflow-hidden rounded-lg bg-black shadow-lg transition-transform duration-500 hover:-translate-y-1 block ${colSpan}`}
               >
                 <img

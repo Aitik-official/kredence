@@ -708,7 +708,7 @@ const ProductsPage = () => {
                       asChild
                       className="w-full bg-[#2E6A92] hover:bg-[#245676] text-white mt-auto"
                     >
-                      <Link to={`/products/${product.id}`} className="flex items-center justify-center gap-2 font-semibold">
+                      <Link to={`/${product.id}`} className="flex items-center justify-center gap-2 font-semibold">
                         View Details
                         <ArrowRight className="w-4 h-4" />
                       </Link>
