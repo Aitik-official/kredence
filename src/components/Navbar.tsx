@@ -5,6 +5,7 @@ import { Menu, ChevronDown, Search, X } from "lucide-react";
 import { useEffect, useState, useMemo } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { products } from "@/pages/ProductsPage";
+import { getProductUrl } from "@/lib/utils";
 
 // Filter products into Fence and Metals categories
 const fenceProducts = products.filter(
@@ -62,7 +63,7 @@ const Navbar = () => {
   };
 
   const handleProductClick = (productId: string) => {
-    navigate(`/${productId}`);
+    navigate(getProductUrl(productId));
     setSearchQuery("");
     setIsSearchFocused(false);
   };
@@ -178,7 +179,7 @@ const Navbar = () => {
                       {fenceProducts.map((product) => (
                         <Link
                           key={product.id}
-                          to={`/${product.id}`}
+                          to={getProductUrl(product.id)}
                           onClick={() => setIsProductsHovered(false)}
                           className="block px-6 py-2.5 text-sm text-[#4A5459] transition-all duration-200 hover:bg-[#2E6A92]/5 hover:text-[#2E6A92] hover:pl-8"
                         >
@@ -197,7 +198,7 @@ const Navbar = () => {
                       {metalsProducts.map((product) => (
                         <Link
                           key={product.id}
-                          to={`/${product.id}`}
+                          to={getProductUrl(product.id)}
                           onClick={() => setIsProductsHovered(false)}
                           className="block px-6 py-2.5 text-sm text-[#4A5459] transition-all duration-200 hover:bg-[#2E6A92]/5 hover:text-[#2E6A92] hover:pl-8"
                         >
@@ -314,7 +315,7 @@ const Navbar = () => {
                 {fenceProducts.map((product) => (
                   <NavLink
                     key={product.id}
-                    to={`/${product.id}`}
+                    to={getProductUrl(product.id)}
                     className="block py-1.5 pl-4 text-sm text-[#4A5459] transition-colors hover:text-[#2E6A92]"
                     activeClassName="text-[#2E6A92]"
                   >
@@ -329,7 +330,7 @@ const Navbar = () => {
                 {metalsProducts.map((product) => (
                   <NavLink
                     key={product.id}
-                    to={`/${product.id}`}
+                    to={getProductUrl(product.id)}
                     className="block py-1.5 pl-4 text-sm text-[#4A5459] transition-colors hover:text-[#2E6A92]"
                     activeClassName="text-[#2E6A92]"
                   >

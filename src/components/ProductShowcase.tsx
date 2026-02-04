@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { getProductUrl } from "@/lib/utils";
 
 const products = [
   {
@@ -52,7 +53,7 @@ const ProductShowcase = () => {
             return (
               <Link
                 key={product.title}
-                to={`/${product.id}`}
+                to={getProductUrl(product.id)}
                 className={`group relative aspect-[4/3] overflow-hidden rounded-lg bg-black shadow-lg transition-transform duration-500 hover:-translate-y-1 block ${colSpan}`}
               >
                 <img

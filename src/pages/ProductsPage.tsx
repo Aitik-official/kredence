@@ -9,6 +9,7 @@ import { ArrowRight, Package, Building2, Layers, Grid, Wrench, Fence, Leaf } fro
 import metalFence from "@/assets/metal-fence.jpg";
 import vinylFence from "@/assets/vinyl-fence.jpg";
 import woodFence from "@/assets/wood-fence.jpg";
+import { getProductUrl } from "@/lib/utils";
 
 // Product images from external sources for metal products
 const productImages = {
@@ -708,7 +709,7 @@ const ProductsPage = () => {
                       asChild
                       className="w-full bg-[#2E6A92] hover:bg-[#245676] text-white mt-auto"
                     >
-                      <Link to={`/${product.id}`} className="flex items-center justify-center gap-2 font-semibold">
+                      <Link to={getProductUrl(product.id)} className="flex items-center justify-center gap-2 font-semibold">
                         View Details
                         <ArrowRight className="w-4 h-4" />
                       </Link>

@@ -40,19 +40,19 @@ const App = () => (
           <Route path="/products" element={<ProductsPage />} />
           <Route path="/metals" element={<MetalsPage />} />
           {/* Individual Product Pages */}
-          <Route path="/gi-coils" element={<GICoilsPage />} />
-          <Route path="/ppgi-coils" element={<PPGICoilsPage />} />
-          <Route path="/sandwich-panels" element={<SandwichPanelsPage />} />
-          <Route path="/corrugated-sheets" element={<CorrugatedSheetsPage />} />
-          <Route path="/decking-sheets" element={<DeckingSheetsPage />} />
-          <Route path="/purlins" element={<PurlinsPage />} />
-          <Route path="/fencing-panels" element={<FencingPanelsPage />} />
-          <Route path="/pvc-fence" element={<PVCFencePage />} />
-          <Route path="/wire-mesh" element={<WireMeshPage />} />
-          <Route path="/chain-link-fence" element={<ChainLinkFencePage />} />
-          <Route path="/drywall" element={<DrywallPage />} />
-          <Route path="/flashing" element={<FlashingPage />} />
-          <Route path="/skylights" element={<SkylightsPage />} />
+          <Route path="/GI-Mill-Finish-Coils" element={<GICoilsPage />} />
+          <Route path="/PPGI-Color-Coated-Coils" element={<PPGICoilsPage />} />
+          <Route path="/Insulated-Sandwich-Panels" element={<SandwichPanelsPage />} />
+          <Route path="/Corrugated-Color-Sheets" element={<CorrugatedSheetsPage />} />
+          <Route path="/Decking-Sheets" element={<DeckingSheetsPage />} />
+          <Route path="/Z-and-C-Purlins" element={<PurlinsPage />} />
+          <Route path="/Fencing-Panels-Hoarding" element={<FencingPanelsPage />} />
+          <Route path="/Pvc-Eco-Fence" element={<PVCFencePage />} />
+          <Route path="/Heras-Fence" element={<WireMeshPage />} />
+          <Route path="/Chain-Link-Fence" element={<ChainLinkFencePage />} />
+          <Route path="/Drywall-Partition-Systems" element={<DrywallPage />} />
+          <Route path="/Roofing-Flashings-and-Gutters" element={<FlashingPage />} />
+          <Route path="/GRP-Translucent-Sheets-Skylights" element={<SkylightsPage />} />
           {/* Fallback dynamic route for backward compatibility */}
           <Route path="/products/:id" element={<ProductDetailPage />} />
           <Route path="/services" element={<ServicesPage />} />

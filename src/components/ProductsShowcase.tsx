@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
 import { products } from "@/pages/ProductsPage";
 import { useState, useMemo } from "react";
+import { getProductUrl } from "@/lib/utils";
 
 // Filter products
 const fenceProducts = products.filter(
@@ -112,7 +113,7 @@ const ProductsShowcase = () => {
                           asChild
                           className="w-full bg-[#2E6A92] hover:bg-[#245676] text-white mt-auto text-sm"
                         >
-                          <Link to={`/${product.id}`} className="flex items-center justify-center gap-2 font-semibold">
+                          <Link to={getProductUrl(product.id)} className="flex items-center justify-center gap-2 font-semibold">
                             View Details
                             <ArrowRight className="w-4 h-4" />
                           </Link>
@@ -203,7 +204,7 @@ const ProductsShowcase = () => {
                           asChild
                           className="w-full bg-[#2E6A92] hover:bg-[#245676] text-white mt-auto text-sm"
                         >
-                          <Link to={`/${product.id}`} className="flex items-center justify-center gap-2 font-semibold">
+                          <Link to={getProductUrl(product.id)} className="flex items-center justify-center gap-2 font-semibold">
                             View Details
                             <ArrowRight className="w-4 h-4" />
                           </Link>
