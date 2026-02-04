@@ -32,50 +32,7 @@
   <meta name="twitter:site" content="@Lovable" />
   <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
   
-  <!-- Immediate SEO Update Script - Runs synchronously before React loads -->
-  <script>
-    (function() {
-      // Check URL immediately - handle both server-side and client-side routing
-      var path = (window.location.pathname || '').toLowerCase();
-      var isFencingPanelsPage = path.indexOf('fencing-panels-hoarding') !== -1 ||
-                                path === '/fencing-panels-hoarding' ||
-                                window.location.pathname === '/Fencing-Panels-Hoarding' ||
-                                window.location.pathname.indexOf('/Fencing-Panels-Hoarding') !== -1;
-      
-      if (isFencingPanelsPage) {
-        // Update title immediately
-        var titleEl = document.querySelector('title');
-        if (titleEl) {
-          titleEl.textContent = ' Fencing Panels and Hoardings Supplier in Dubai– kredencesteel.com ';
-        }
-        
-        // Update meta description
-        var metaDesc = document.querySelector('meta[name="description"]');
-        if (metaDesc) {
-          metaDesc.setAttribute('content', ' Leading fencing panels and hoardings supplier in Dubai offering durable, high-quality solutions for construction sites, industrial and commercial projects.');
-        }
-        
-        // Update meta keywords
-        var metaKeywords = document.querySelector('meta[name="keywords"]');
-        if (metaKeywords) {
-          metaKeywords.setAttribute('content', ' Fencing Suppliers in Dubai,UAE, About Fence Trades in Oman, Fencing Panels and Hoardings Supplier in Dubai, Pvc eco fence supplier in Dubai, Heras Fence contractor in Dubai, Chain link fence supplier in UAE, GI Mill Finish Coils supplier in Dubai, PPGI Color Coated Coils Supplier in Dubai, Insulated Sandwich Panels Supplier in Dubai, Corrugated Color Sheets suppliers in Dubai, Decking Sheets suppliers in Dubai, Z and C Purlins Supplier in Dubai, Roofing Flashings and Gutters supplier in Dubai, GRP Translucent Sheets Skylights supplier in Dubai, Contact us for fence supplier.');
-        }
-        
-        // Update Open Graph title
-        var ogTitle = document.querySelector('meta[property="og:title"]');
-        if (ogTitle) {
-          ogTitle.setAttribute('content', ' Fencing Panels and Hoardings Supplier in Dubai– kredencesteel.com ');
-        }
-        
-        // Update Open Graph description
-        var ogDesc = document.querySelector('meta[property="og:description"]');
-        if (ogDesc) {
-          ogDesc.setAttribute('content', ' Leading fencing panels and hoardings supplier in Dubai offering durable, high-quality solutions for construction sites, industrial and commercial projects.');
-        }
-      }
-    })();
-  </script>
-</head>
+ 
 
 <body>
   <div id="root"></div>
