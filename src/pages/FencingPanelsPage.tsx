@@ -1,7 +1,45 @@
-import { useEffect } from "react";
+import { useEffect, useLayoutEffect } from "react";
 import ProductPageTemplate from "@/components/ProductPageTemplate";
 
 const FencingPanelsPage = () => {
+  // Update meta tags immediately for SEO
+  useLayoutEffect(() => {
+    document.title = " Fencing Panels and Hoardings Supplier in Dubai– kredencesteel.com ";
+    
+    let metaDescription = document.querySelector('meta[name="description"]');
+    if (!metaDescription) {
+      metaDescription = document.createElement("meta");
+      metaDescription.setAttribute("name", "description");
+      document.head.appendChild(metaDescription);
+    }
+    metaDescription.setAttribute("content", " Leading fencing panels and hoardings supplier in Dubai offering durable, high-quality solutions for construction sites, industrial and commercial projects.");
+    
+    let metaKeywords = document.querySelector('meta[name="keywords"]');
+    if (!metaKeywords) {
+      metaKeywords = document.createElement("meta");
+      metaKeywords.setAttribute("name", "keywords");
+      document.head.appendChild(metaKeywords);
+    }
+    metaKeywords.setAttribute("content", " Fencing Suppliers in Dubai,UAE, About Fence Trades in Oman, Fencing Panels and Hoardings Supplier in Dubai, Pvc eco fence supplier in Dubai, Heras Fence contractor in Dubai, Chain link fence supplier in UAE, GI Mill Finish Coils supplier in Dubai, PPGI Color Coated Coils Supplier in Dubai, Insulated Sandwich Panels Supplier in Dubai, Corrugated Color Sheets suppliers in Dubai, Decking Sheets suppliers in Dubai, Z and C Purlins Supplier in Dubai, Roofing Flashings and Gutters supplier in Dubai, GRP Translucent Sheets Skylights supplier in Dubai, Contact us for fence supplier.");
+
+    // Update Open Graph tags
+    let ogTitle = document.querySelector('meta[property="og:title"]');
+    if (!ogTitle) {
+      ogTitle = document.createElement("meta");
+      ogTitle.setAttribute("property", "og:title");
+      document.head.appendChild(ogTitle);
+    }
+    ogTitle.setAttribute("content", " Fencing Panels and Hoardings Supplier in Dubai– kredencesteel.com ");
+
+    let ogDescription = document.querySelector('meta[property="og:description"]');
+    if (!ogDescription) {
+      ogDescription = document.createElement("meta");
+      ogDescription.setAttribute("property", "og:description");
+      document.head.appendChild(ogDescription);
+    }
+    ogDescription.setAttribute("content", " Leading fencing panels and hoardings supplier in Dubai offering durable, high-quality solutions for construction sites, industrial and commercial projects.");
+  }, []);
+
   useEffect(() => {
     // Add Google Site Verification meta tag
     let googleVerification = document.querySelector('meta[name="google-site-verification"]');

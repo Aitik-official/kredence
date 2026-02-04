@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useLayoutEffect } from "react";
 import SiteLayout from "@/components/SiteLayout";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -82,10 +82,12 @@ const ProductPageTemplate = ({ product, metaTitle, metaDescription, metaKeywords
     return { key: spec, value: "" };
   };
 
-  // Update meta tags and add Google tracking scripts
-  useEffect(() => {
+  // Update meta tags immediately (synchronously) for SEO
+  useLayoutEffect(() => {
+    // Update title immediately
     document.title = metaTitle;
     
+    // Update or create meta description
     let metaDescriptionEl = document.querySelector('meta[name="description"]');
     if (!metaDescriptionEl) {
       metaDescriptionEl = document.createElement("meta");
@@ -94,6 +96,7 @@ const ProductPageTemplate = ({ product, metaTitle, metaDescription, metaKeywords
     }
     metaDescriptionEl.setAttribute("content", metaDescription);
     
+    // Update or create meta keywords
     let metaKeywordsEl = document.querySelector('meta[name="keywords"]');
     if (!metaKeywordsEl) {
       metaKeywordsEl = document.createElement("meta");
@@ -101,6 +104,27 @@ const ProductPageTemplate = ({ product, metaTitle, metaDescription, metaKeywords
       document.head.appendChild(metaKeywordsEl);
     }
     metaKeywordsEl.setAttribute("content", metaKeywords);
+
+    // Update Open Graph tags
+    let ogTitle = document.querySelector('meta[property="og:title"]');
+    if (!ogTitle) {
+      ogTitle = document.createElement("meta");
+      ogTitle.setAttribute("property", "og:title");
+      document.head.appendChild(ogTitle);
+    }
+    ogTitle.setAttribute("content", metaTitle);
+
+    let ogDescription = document.querySelector('meta[property="og:description"]');
+    if (!ogDescription) {
+      ogDescription = document.createElement("meta");
+      ogDescription.setAttribute("property", "og:description");
+      document.head.appendChild(ogDescription);
+    }
+    ogDescription.setAttribute("content", metaDescription);
+  }, [metaTitle, metaDescription, metaKeywords]);
+
+  // Add Google tracking scripts
+  useEffect(() => {
 
     // Add Google Site Verification meta tag
     let googleVerification = document.querySelector('meta[name="google-site-verification"]');
