@@ -1,7 +1,64 @@
-import { useEffect } from "react";
-import ProductPageTemplate from "@/components/ProductPageTemplate";
+import { useEffect, useLayoutEffect, useState } from "react";
+import SiteLayout from "@/components/SiteLayout";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Link } from "react-router-dom";
+import { ChevronLeft, ChevronRight, Check, Minus, Plus } from "lucide-react";
+import { Badge } from "@/components/ui/badge";
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+} from "@/components/ui/breadcrumb";
+import QuoteRequestModal from "@/components/QuoteRequestModal";
 
 const DeckingSheetsPage = () => {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [quantity, setQuantity] = useState(1);
+  const [isQuoteModalOpen, setIsQuoteModalOpen] = useState(false);
+
+  // SEO Meta Tags - Update immediately for SEO
+  useLayoutEffect(() => {
+    document.title = " Decking Sheets suppliers in Dubai – www. kredencesteel.com ";
+    
+    let metaDescription = document.querySelector('meta[name="description"]');
+    if (!metaDescription) {
+      metaDescription = document.createElement("meta");
+      metaDescription.setAttribute("name", "description");
+      document.head.appendChild(metaDescription);
+    }
+    metaDescription.setAttribute("content", " Trusted decking sheets suppliers in Dubai offering high-quality steel decking sheets for commercial, industrial and construction projects.");
+    
+    let metaKeywords = document.querySelector('meta[name="keywords"]');
+    if (!metaKeywords) {
+      metaKeywords = document.createElement("meta");
+      metaKeywords.setAttribute("name", "keywords");
+      document.head.appendChild(metaKeywords);
+    }
+    metaKeywords.setAttribute("content", " Fencing Suppliers in Dubai,UAE, About Fence Trades in Oman, Fencing Panels and Hoardings Supplier in Dubai, Pvc eco fence supplier in Dubai, Heras Fence contractor in Dubai, Chain link fence supplier in UAE, GI Mill Finish Coils supplier in Dubai, PPGI Color Coated Coils Supplier in Dubai, Insulated Sandwich Panels Supplier in Dubai, Corrugated Color Sheets suppliers in Dubai, Decking Sheets suppliers in Dubai, Z and C Purlins Supplier in Dubai, Roofing Flashings and Gutters supplier in Dubai, GRP Translucent Sheets Skylights supplier in Dubai, Contact us for fence supplier.");
+
+    // Update Open Graph tags
+    let ogTitle = document.querySelector('meta[property="og:title"]');
+    if (!ogTitle) {
+      ogTitle = document.createElement("meta");
+      ogTitle.setAttribute("property", "og:title");
+      document.head.appendChild(ogTitle);
+    }
+    ogTitle.setAttribute("content", " Decking Sheets suppliers in Dubai – www. kredencesteel.com ");
+
+    let ogDescription = document.querySelector('meta[property="og:description"]');
+    if (!ogDescription) {
+      ogDescription = document.createElement("meta");
+      ogDescription.setAttribute("property", "og:description");
+      document.head.appendChild(ogDescription);
+    }
+    ogDescription.setAttribute("content", " Trusted decking sheets suppliers in Dubai offering high-quality steel decking sheets for commercial, industrial and construction projects.");
+  }, []);
+
+  // Google Tracking Scripts
   useEffect(() => {
     // Add Google Site Verification meta tag
     let googleVerification = document.querySelector('meta[name="google-site-verification"]');
@@ -56,50 +113,340 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
   }, []);
 
+  // Product data
   const product = {
     id: "decking-sheets",
     title: "Decking Sheets",
     code: "E",
-    image: "https://tse3.mm.bing.net/th/id/OIP.mzsttxGsOjsheboi-5IW8wHaE0?rs=1&pid=ImgDetMain&o=7&rm=3",
+    image: "https://th.bing.com/th/id/OIP.hxUJX5Yq8PBgxqF5Ivn4GQHaFj?w=259&h=194&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
     images: [
-      "https://tse3.mm.bing.net/th/id/OIP.mzsttxGsOjsheboi-5IW8wHaE0?rs=1&pid=ImgDetMain&o=7&rm=3",
-      "https://tse1.mm.bing.net/th/id/OIP.AWl924M9xV3pFtrNrxQDHAHaHa?pid=ImgDet&w=185&h=185&c=7&dpr=1.3&o=7&rm=3",
-      "https://th.bing.com/th/id/OIP.SQoFreyhHyD5S0WC59hcDgHaHa?w=159&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+      "https://th.bing.com/th/id/OIP.hxUJX5Yq8PBgxqF5Ivn4GQHaFj?w=259&h=194&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
+      "https://th.bing.com/th/id/OIP.U-ZzqF0VpOcL7_JN9t3EAAHaHa?w=185&h=185&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
+      "https://th.bing.com/th/id/OIP.hxUJX5Yq8PBgxqF5Ivn4GQHaFj?w=259&h=194&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
     ],
-    category: "Decking",
-    fullDescription: "Metal Floor Deck with Ribbed Profiles - 45/150 & 75/305",
-    subtitle: "45/150 & 75/305",
-    description: "Metal Floor Deck with Ribbed Profiles - 45/150 & 75/305",
-    detailedDescription: "Metal Decking Sheets from KREDENCE STEEL TRADING are structural steel products designed for use in composite floor systems. Our metal decking profiles meet international steel design standards with maximum strength. The Steel Floor Deck has a ribbed profile with embossments, designed to bind together with concrete slabs, creating a reinforced concrete slab serving the dual purpose of taking up a permanent form to become part of the floor, and also offer positive reinforcement. These products are manufactured to meet the prescribed specification of design engineers and building contractors. The components are aesthetically pleasant, weatherproof, with excellent thermal insulation and offer resistance to fire, fungi and mildew. Available in standard profiles 45/150 (900mm covering width) and 75/305 (914mm covering width), our decking sheets feature ribbed profiles that provide excellent load-bearing capacity while reducing the overall weight of the structure. Made from Pre-Galvanized steel with thickness ranging from 0.5mm to 1.5mm as per ASTM A 653 Standards, Grade D, with Zinc G90 (275 gms/m²). Different grades can be supplied on request of our customers. These decking sheets are ideal for multi-story construction projects, mezzanines, bridge walkways, porches, in-fills, platforms and parking garages, and storage facilities, requiring fast and efficient installation.",
+    category: "Sheets",
+    fullDescription: "Steel decking sheets - Type A (36 mm), Type B (38 mm), Type C (61 mm), Type D (77 mm)",
+    description: "Steel decking sheets - Type A (36 mm), Type B (38 mm), Type C (61 mm), Type D (77 mm)",
+    detailedDescription: "Decking Sheets from KREDENCE STEEL TRADING are structural steel decking sheets used in composite floor systems. Made from galvanized steel, these sheets serve multiple functions including acting as a permanent formwork for concrete, providing tensile reinforcement, and serving as a working platform. They are designed to work in composite action with concrete, creating a strong and efficient flooring system. They are available in different types, including Type A (36 mm), Type B (38 mm), Type C (61 mm), and Type D (77 mm). Type A (36 mm) decking sheets are suitable for shorter spans and lighter loads, making them ideal for smaller buildings and residential projects. Type B (38 mm) decking sheets offer slightly better performance than Type A, suitable for medium spans and loads. Type C (61 mm) decking sheets are designed for longer spans and heavier loads, making them ideal for commercial and industrial buildings. Type D (77 mm) decking sheets are the most heavy-duty option, designed for the longest spans and heaviest loads, making them ideal for large commercial and industrial structures. These decking sheets are made from galvanized steel, which provides excellent corrosion resistance and durability. The galvanized coating protects the steel from rust and corrosion, ensuring a long lifespan even in harsh environments. Decking sheets are easy to install and can be quickly laid out on structural steel frames, providing a working platform for construction workers. They are also cost-effective, as they eliminate the need for traditional formwork and can reduce construction time significantly. The composite action between the decking sheets and concrete creates a strong and efficient floor system that can support heavy loads while maintaining structural integrity.",
     specifications: [
-      "45/150: 900mm covering width",
-      "75/305: 914mm covering width",
-      "Thickness: 0.5mm - 1.5mm",
-      "Pre-Galvanized Steel, Grade D",
-      "Zinc G90 (275 gms/m²)",
-      "Standards: ASTM A 653",
-      "Profile: Ribbed profile with embossments",
-      "Design: Meets international steel design standards with maximum strength",
-      "Customization: Different grades can be supplied on request"
+      "Types: Type A (36 mm), Type B (38 mm), Type C (61 mm), Type D (77 mm)",
+      "Material: Galvanized Steel",
+      "Functions: Permanent formwork, Tensile reinforcement, Working platform",
+      "Design: Composite action with concrete",
+      "Characteristics: Lightweight, Easy to install, Cost-effective",
+      "Benefits: Reduces construction time, Eliminates traditional formwork",
+      "Properties: Corrosion-resistant, Durable, Structural integrity",
+      "Applications: Commercial buildings, Industrial structures, Residential projects"
     ],
     applications: [
+      "Residential Buildings",
+      "Commercial Buildings",
+      "Industrial Structures",
+      "Warehouses",
       "Multi-story Buildings",
-      "Mezzanines",
-      "Bridge Walkways",
-      "Porches",
-      "In-fills",
-      "Platforms and Parking Garages",
-      "Storage Facilities"
+      "Parking Structures",
+      "Office Buildings",
+      "Shopping Centers"
     ]
   };
 
+  // Create image array - use product images if available, otherwise use single product image
+  const productImages = (product.images && Array.isArray(product.images) && product.images.length > 0)
+    ? product.images
+    : [product.image, product.image, product.image];
+
+  const nextImage = () => {
+    setCurrentImageIndex((prev) => (prev + 1) % productImages.length);
+  };
+
+  const prevImage = () => {
+    setCurrentImageIndex((prev) => (prev - 1 + productImages.length) % productImages.length);
+  };
+
+  const selectImage = (index: number) => {
+    setCurrentImageIndex(index);
+  };
+
+  const increaseQuantity = () => {
+    setQuantity((prev) => prev + 1);
+  };
+
+  const decreaseQuantity = () => {
+    setQuantity((prev) => Math.max(1, prev - 1));
+  };
+
+  // Format specifications for display
+  const formatSpecification = (spec: string) => {
+    if (spec.includes(":")) {
+      const [key, value] = spec.split(":").map((s) => s.trim());
+      return { key, value };
+    }
+    return { key: spec, value: "" };
+  };
+
   return (
-    <ProductPageTemplate
-      product={product}
-      metaTitle=" Decking Sheets suppliers in Dubai – www. kredencesteel.com "
-      metaDescription=" Trusted decking sheets suppliers in Dubai offering high-quality steel decking sheets for commercial, industrial and construction projects."
-      metaKeywords=" Fencing Suppliers in Dubai,UAE, About Fence Trades in Oman, Fencing Panels and Hoardings Supplier in Dubai, Pvc eco fence supplier in Dubai, Heras Fence contractor in Dubai, Chain link fence supplier in UAE, GI Mill Finish Coils supplier in Dubai, PPGI Color Coated Coils Supplier in Dubai, Insulated Sandwich Panels Supplier in Dubai, Corrugated Color Sheets suppliers in Dubai, Decking Sheets suppliers in Dubai, Z and C Purlins Supplier in Dubai, Roofing Flashings and Gutters supplier in Dubai, GRP Translucent Sheets Skylights supplier in Dubai, Contact us for fence supplier."
-    />
+    <SiteLayout>
+      <section className="py-8 bg-background">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Breadcrumbs */}
+          <div className="mb-6">
+            <Breadcrumb>
+              <BreadcrumbList>
+                <BreadcrumbItem>
+                  <BreadcrumbLink asChild>
+                    <Link to="/">Home</Link>
+                  </BreadcrumbLink>
+                </BreadcrumbItem>
+                <BreadcrumbSeparator />
+                <BreadcrumbItem>
+                  <BreadcrumbLink asChild>
+                    <Link to="/products">Products</Link>
+                  </BreadcrumbLink>
+                </BreadcrumbItem>
+                <BreadcrumbSeparator />
+                <BreadcrumbItem>
+                  <BreadcrumbPage className="capitalize">{product.category}</BreadcrumbPage>
+                </BreadcrumbItem>
+                <BreadcrumbSeparator />
+                <BreadcrumbItem>
+                  <BreadcrumbPage>{product.title}</BreadcrumbPage>
+                </BreadcrumbItem>
+              </BreadcrumbList>
+            </Breadcrumb>
+          </div>
+
+          {/* Product Title and Badges */}
+          <div className="mb-6 flex flex-wrap items-center gap-3">
+            <Badge variant="secondary" className="px-4 py-1.5 text-sm bg-purple-100 text-purple-700">
+              {product.category.toUpperCase()}
+            </Badge>
+            <Badge variant="secondary" className="px-4 py-1.5 text-sm bg-green-100 text-green-700">
+              In Stock
+            </Badge>
+          </div>
+
+          <h1 className="text-4xl font-bold text-foreground mb-8">{product.title}</h1>
+
+          {/* Main Product Layout */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            {/* Left Side - Images */}
+            <div className="space-y-4">
+              {/* Main Image with Carousel */}
+              <Card className="border border-border rounded-lg overflow-hidden">
+                <div className="relative aspect-square bg-white flex items-center justify-center group">
+                  <img
+                    src={productImages[currentImageIndex]}
+                    alt={product.title}
+                    className="w-full h-full object-contain p-8"
+                  />
+                  
+                  {/* Navigation Arrows */}
+                  <Button
+                    variant="ghost"
+                    size="icon"
+                    className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white shadow-lg opacity-0 group-hover:opacity-100 transition-opacity"
+                    onClick={prevImage}
+                  >
+                    <ChevronLeft className="h-6 w-6" />
+                  </Button>
+                  <Button
+                    variant="ghost"
+                    size="icon"
+                    className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white shadow-lg opacity-0 group-hover:opacity-100 transition-opacity"
+                    onClick={nextImage}
+                  >
+                    <ChevronRight className="h-6 w-6" />
+                  </Button>
+                </div>
+              </Card>
+
+              {/* Thumbnail Images */}
+              <div className="flex gap-3">
+                {productImages.map((img, index) => (
+                  <button
+                    key={index}
+                    onClick={() => selectImage(index)}
+                    className={`flex-1 aspect-square border-2 rounded-lg overflow-hidden transition-all ${
+                      index === currentImageIndex
+                        ? "border-red-500 ring-2 ring-red-200"
+                        : "border-border hover:border-gray-400"
+                    }`}
+                  >
+                    <img
+                      src={img}
+                      alt={`${product.title} view ${index + 1}`}
+                      className="w-full h-full object-cover"
+                    />
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            {/* Right Side - Product Details */}
+            <div className="space-y-6">
+              {/* Specifications Card */}
+              {product.specifications && product.specifications.length > 0 && (
+                <Card className="border border-border rounded-lg">
+                  <CardHeader>
+                    <CardTitle className="text-xl font-semibold">Specifications</CardTitle>
+                  </CardHeader>
+                  <CardContent className="space-y-3">
+                    {product.specifications.slice(0, 4).map((spec, idx) => {
+                      const formatted = formatSpecification(spec);
+                      return (
+                        <div key={idx} className="flex justify-between items-start">
+                          <span className="text-sm font-medium text-muted-foreground">{formatted.key}:</span>
+                          <span className="text-sm text-foreground text-right ml-4">{formatted.value || formatted.key}</span>
+                        </div>
+                      );
+                    })}
+                  </CardContent>
+                </Card>
+              )}
+
+              {/* Key Features Card */}
+              {product.specifications && product.specifications.length > 0 && (
+                <Card className="border border-border rounded-lg">
+                  <CardHeader>
+                    <CardTitle className="text-xl font-semibold">Key Features</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <ul className="space-y-2">
+                      {product.specifications.slice(4, 8).map((spec, idx) => (
+                        <li key={idx} className="flex items-start gap-2 text-sm text-muted-foreground">
+                          <Check className="w-4 h-4 text-red-500 flex-shrink-0 mt-0.5" />
+                          <span>{spec}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </CardContent>
+                </Card>
+              )}
+
+              {/* Quantity Selector Card */}
+              <Card className="border border-border rounded-lg">
+                <CardHeader>
+                  <CardTitle className="text-xl font-semibold">Quantity</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="flex items-center gap-4">
+                    <Button
+                      variant="outline"
+                      size="icon"
+                      onClick={decreaseQuantity}
+                      className="h-10 w-10"
+                    >
+                      <Minus className="h-4 w-4" />
+                    </Button>
+                    <input
+                      type="number"
+                      value={quantity}
+                      onChange={(e) => setQuantity(Math.max(1, parseInt(e.target.value) || 1))}
+                      className="w-20 text-center text-lg font-semibold border border-border rounded-md py-2"
+                      min="1"
+                    />
+                    <Button
+                      variant="outline"
+                      size="icon"
+                      onClick={increaseQuantity}
+                      className="h-10 w-10"
+                    >
+                      <Plus className="h-4 w-4" />
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Contact Buttons */}
+              <div className="flex gap-4">
+                <Button
+                  onClick={() => setIsQuoteModalOpen(true)}
+                  className="flex-1 bg-gradient-accent hover:shadow-glow text-white"
+                  size="lg"
+                >
+                  Request Quote
+                </Button>
+                <Button
+                  asChild
+                  variant="outline"
+                  className="flex-1"
+                  size="lg"
+                >
+                  <a href="tel:+971565686811">Call Us</a>
+                </Button>
+              </div>
+            </div>
+          </div>
+
+          {/* Additional Product Information */}
+          {product.detailedDescription && (
+            <div className="mt-12">
+              <Card className="border border-border rounded-lg">
+                <CardHeader>
+                  <CardTitle className="text-2xl font-semibold">Product Description</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground leading-relaxed whitespace-pre-line">
+                    {product.detailedDescription}
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+          )}
+
+          {/* Full Specifications */}
+          {product.specifications && product.specifications.length > 8 && (
+            <div className="mt-8">
+              <Card className="border border-border rounded-lg">
+                <CardHeader>
+                  <CardTitle className="text-2xl font-semibold">Full Specifications</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <ul className="space-y-2">
+                    {product.specifications.map((spec, idx) => (
+                      <li key={idx} className="flex items-start gap-2 text-muted-foreground">
+                        <Check className="w-5 h-5 text-[#2E6A92] flex-shrink-0 mt-0.5" />
+                        <span>{spec}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </CardContent>
+              </Card>
+            </div>
+          )}
+
+          {/* Applications */}
+          {product.applications && product.applications.length > 0 && (
+            <div className="mt-8">
+              <Card className="border border-border rounded-lg">
+                <CardHeader>
+                  <CardTitle className="text-2xl font-semibold">Applications</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="flex flex-wrap gap-3">
+                    {product.applications.map((app, idx) => (
+                      <Badge
+                        key={idx}
+                        variant="secondary"
+                        className="px-4 py-2 text-sm bg-[#2E6A92]/10 text-[#2E6A92] hover:bg-[#2E6A92]/20"
+                      >
+                        {app}
+                      </Badge>
+                    ))}
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+          )}
+        </div>
+      </section>
+      <QuoteRequestModal
+        open={isQuoteModalOpen}
+        onOpenChange={setIsQuoteModalOpen}
+        productTitle={product.title}
+        quantity={quantity}
+      />
+    </SiteLayout>
   );
 };
 
