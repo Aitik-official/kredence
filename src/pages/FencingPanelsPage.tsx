@@ -22,7 +22,7 @@ const FencingPanelsPage = () => {
 
   // SEO Meta Tags - Update immediately for SEO
   useLayoutEffect(() => {
-    document.title = "Fencing Panels and Hoardings Supplier in Dubai– kredencesteel.com";
+    document.title = " Fencing Panels and Hoardings Supplier in Dubai– kredencesteel.com ";
     
     let metaDescription = document.querySelector('meta[name="description"]');
     if (!metaDescription) {
@@ -47,7 +47,7 @@ const FencingPanelsPage = () => {
       ogTitle.setAttribute("property", "og:title");
       document.head.appendChild(ogTitle);
     }
-    ogTitle.setAttribute("content", "Fencing Panels and Hoardings Supplier in Dubai– kredencesteel.com");
+    ogTitle.setAttribute("content", " Fencing Panels and Hoardings Supplier in Dubai– kredencesteel.com ");
 
     let ogDescription = document.querySelector('meta[property="og:description"]');
     if (!ogDescription) {
