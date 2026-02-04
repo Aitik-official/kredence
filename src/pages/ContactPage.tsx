@@ -73,7 +73,7 @@ const faqItems = [
 const ContactPage = () => {
   useEffect(() => {
     // Update document title
-    document.title = "Contact us for fence supplier– www. kredencesteel.com";
+    document.title = " Contact us for fence supplier– www. kredencesteel.com ";
     
     // Update meta description
     const metaDescription = document.querySelector('meta[name="description"]');
@@ -82,6 +82,14 @@ const ContactPage = () => {
         "content",
         " Contact our expert fence supplier team in Dubai for quotes, product details, and professional fencing solutions for all projects."
       );
+    } else {
+      const metaDesc = document.createElement("meta");
+      metaDesc.setAttribute("name", "description");
+      metaDesc.setAttribute(
+        "content",
+        " Contact our expert fence supplier team in Dubai for quotes, product details, and professional fencing solutions for all projects."
+      );
+      document.head.appendChild(metaDesc);
     }
     
     // Update or create meta keywords
@@ -93,7 +101,7 @@ const ContactPage = () => {
     }
     metaKeywords.setAttribute(
       "content",
-      "Fencing Suppliers in Dubai,UAE, About Fence Trades in Oman, Fencing Panels and Hoardings Supplier in Dubai, Pvc eco fence supplier in Dubai, Heras Fence contractor in Dubai, Chain link fence supplier in UAE, GI Mill Finish Coils supplier in Dubai, PPGI Color Coated Coils Supplier in Dubai, Insulated Sandwich Panels Supplier in Dubai, Corrugated Color Sheets suppliers in Dubai, Decking Sheets suppliers in Dubai, Z and C Purlins Supplier in Dubai, Roofing Flashings and Gutters supplier in Dubai, GRP Translucent Sheets Skylights supplier in Dubai, Contact us for fence supplier."
+      " Fencing Suppliers in Dubai,UAE, About Fence Trades in Oman, Fencing Panels and Hoardings Supplier in Dubai, Pvc eco fence supplier in Dubai, Heras Fence contractor in Dubai, Chain link fence supplier in UAE, GI Mill Finish Coils supplier in Dubai, PPGI Color Coated Coils Supplier in Dubai, Insulated Sandwich Panels Supplier in Dubai, Corrugated Color Sheets suppliers in Dubai, Decking Sheets suppliers in Dubai, Z and C Purlins Supplier in Dubai, Roofing Flashings and Gutters supplier in Dubai, GRP Translucent Sheets Skylights supplier in Dubai, Contact us for fence supplier."
     );
 
     // Add Google Site Verification meta tag
