@@ -4,19 +4,19 @@ const testimonials = [
   {
     quote:
       "KREDENCE delivered an impeccable perimeter solution for our headquarters. Their attention to detail and ability to coordinate complex logistics kept the project on schedule and on budget.",
-    name: "Amelia Roberts",
+    name: "Anupam Kumar",
     role: "Global Facilities Director, Vertex Technologies",
   },
   {
     quote:
       "From design workshops to installation, the team was proactive and collaborative. The final result elevates our campus while meeting rigorous security requirements.",
-    name: "Colin Stewart",
+    name: "Vicky Sharma",
     role: "Head of Infrastructure, Northgate University",
   },
   {
     quote:
       "Their materials knowledge and craftsmanship are second to none. We now have a premium perimeter that enhances the guest experience without compromising protection.",
-    name: "Sofia Martinez",
+    name: "Himanshu Ghode",
     role: "Operations Manager, Azure Resorts",
   },
 ];

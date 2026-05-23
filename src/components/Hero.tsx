@@ -1,5 +1,4 @@
-import heroImage from "@/assets/hero-fence.jpg";
-import metalFence from "@/assets/metal-fence.jpg";
+import hoardingImage from "@/assets/HOARDING.webp";
 import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -9,25 +8,25 @@ import { Link } from "react-router-dom";
 const heroSlides = [
   // Fence Slide 1
   {
-    image: heroImage,
+    image: hoardingImage,
     eyebrow: "Premium Fencing Solutions",
-    title: "Professional Chain Link & Security Fencing",
-    description: "Explore our comprehensive range of high-quality fencing products including chain link fences, PVC fences, wire mesh, and fencing panels designed for durability, security, and performance.",
-    primaryButton: { text: "View Fence Products", link: "/products" },
+    title: "Fencing Panels & Hoardings",
+    description: "Temporary and continuous corrugated fencing panels with complete accessories for construction sites, project boundaries, and secure site enclosures across UAE and GCC.",
+    primaryButton: { text: "View Fence Products", link: "/Fencing-Panels-Hoarding" },
     secondaryButton: { text: "Get a Quote", link: "/contact" },
   },
   // Fence Slide 2
   {
-    image: metalFence,
+    image: "https://www.doogoodaustralia.com.au/upload/images/main(1).webp",
     eyebrow: "Secure Your Property",
-    title: "Durable Fencing for Every Application",
-    description: "From residential boundaries to industrial security, our fencing solutions offer superior protection, low maintenance, and long-lasting performance. Trusted by businesses across UAE and GCC.",
-    primaryButton: { text: "View Fence Products", link: "/products" },
+    title: "Wire Mesh Fence / Weld Mesh Fence / Heras Fence",
+    description: "Leading manufacturer and supplier of high-quality stainless steel wire mesh across the UAE. Durable, corrosion-resistant fencing for industrial, commercial, and security applications.",
+    primaryButton: { text: "View Fence Products", link: "/Heras-Fence" },
     secondaryButton: { text: "Contact Us", link: "/contact" },
   },
   // Metals Slide 1
   {
-    image: "https://media.istockphoto.com/id/1461248986/photo/stack-of-rolled-metal-on-a-metal-background-3d-illustration.jpg?s=612x612&w=0&k=20&c=pjlRePHe8xJAYzaMxKIUInNSHoYKY5IHQFdoNwIPyjM=",
+    image: "https://www.gneesteel.com/d/images/image(297).png",
     eyebrow: "Premium Metal Products",
     title: "High-Quality Steel Coils & Sheets",
     description: "Discover our extensive range of metal products including GI coils, PPGI color coated coils, corrugated sheets, sandwich panels, purlins, and decking sheets. Meeting international standards for construction excellence.",
@@ -36,12 +35,12 @@ const heroSlides = [
   },
   // Metals Slide 2
   {
-    image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=2000&q=90",
-    eyebrow: "Steel Trading Excellence",
-    title: "Your Trusted Partner for Building Materials",
-    description: "Kredence Steel Trading delivers premium quality steel products and building materials across UAE and GCC. With over 15 years of experience, we provide comprehensive solutions for construction and industrial projects.",
-    primaryButton: { text: "View Metal Products", link: "/metals" },
-    secondaryButton: { text: "Speak to Expert", link: "/contact" },
+    image: "https://tse4.mm.bing.net/th/id/OIP.5OP1iIcHK5ASGZh1lGhHEgHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    eyebrow: "Premium Metal Products",
+    title: "PPGI Color Coated Coils",
+    description: "Pre-painted galvanized steel coils available in a wide range of RAL colors with superior weather resistance and aesthetic appeal for architectural and construction applications.",
+    primaryButton: { text: "View Metal Products", link: "/PPGI-Color-Coated-Coils" },
+    secondaryButton: { text: "Request Quote", link: "/contact" },
   },
 ];
 

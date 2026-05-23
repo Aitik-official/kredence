@@ -14,6 +14,7 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 import QuoteRequestModal from "@/components/QuoteRequestModal";
+import hoardingImage from "@/assets/HOARDING.webp";
 
 const FencingPanelsPage = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -118,11 +119,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     id: "fencing-panels",
     title: "Fencing Panels & Hoardings",
     code: "G",
-    image: "/fencing1.jpeg",
+    image: hoardingImage,
     images: [
-      "/fencing panels 2.jpeg",
-      "/fencing1.jpeg",
-      "/fencong panels 3.jpeg"
+      hoardingImage,
     ],
     category: "Fencing",
     fullDescription: "Temporary Fencing Panels (Discontinuous) and Continuous Corrugated Fencing with complete accessories. Metal and machine-discontinuous fencing panels primarily used for construction sites.",

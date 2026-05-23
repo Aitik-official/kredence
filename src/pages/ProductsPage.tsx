@@ -9,13 +9,14 @@ import { ArrowRight, Package, Building2, Layers, Grid, Wrench, Fence, Leaf } fro
 import metalFence from "@/assets/metal-fence.jpg";
 import vinylFence from "@/assets/vinyl-fence.jpg";
 import woodFence from "@/assets/wood-fence.jpg";
+import hoardingImage from "@/assets/HOARDING.webp";
 import { getProductUrl } from "@/lib/utils";
 
 // Product images from external sources for metal products
 const productImages = {
   "gi-coils": "/gicoils.jpeg",
   "ppgi-coils": "https://tse4.mm.bing.net/th/id/OIP.5OP1iIcHK5ASGZh1lGhHEgHaE8?rs=1&pid=ImgDetMain&o=7&rm=3",
-  "sandwich-panels": "https://5.imimg.com/data5/RT/ZQ/EO/SELLER-2020121/30-mm-puf-insulated-sandwich-roof-panel-500x500.jpg",
+  "sandwich-panels": "/insulated-sandwich-panel-1.jpeg",
   "corrugated-sheets": "https://tse3.mm.bing.net/th/id/OIP.s2DkxQgR68QZJ0fYTlJ06QHaGK?pid=ImgDet&w=184&h=153&c=7&dpr=1.3&o=7&rm=3",
   "decking-sheets": "https://tse3.mm.bing.net/th/id/OIP.mzsttxGsOjsheboi-5IW8wHaE0?rs=1&pid=ImgDetMain&o=7&rm=3",
   "purlins": "https://tse3.mm.bing.net/th/id/OIP.DDTjoadU-onPFdrs1hPYfgHaFL?rs=1&pid=ImgDetMain&o=7&rm=3",
@@ -103,10 +104,10 @@ export const products = [
     icon: Building2,
     title: "Insulated Sandwich Panels",
     code: "C",
-    image: "/sand1.jpeg",
+    image: "/insulated-sandwich-panel-1.jpeg",
     images: [
-      "/sand1.jpeg",
-      "/sand2.jpeg"
+      "/insulated-sandwich-panel-1.jpeg",
+      "/insulated-sandwich-panel-2.jpeg"
     ],
     category: "Panels",
     fullDescription: "Roof, Wall Panels & Cold Room Solutions with PUR/PIR Insulation",
@@ -247,11 +248,9 @@ export const products = [
     icon: Fence,
     title: "Fencing Panels & Hoardings",
     code: "G",
-    image: "/fencing1.jpeg",
+    image: hoardingImage,
     images: [
-      "/fencing panels 2.jpeg",
-      "/fencing1.jpeg",
-      "/fencong panels 3.jpeg"
+      hoardingImage,
     ],
     category: "Fencing",
     fullDescription: "Temporary Fencing Panels (Discontinuous) and Continuous Corrugated Fencing with complete accessories. Metal and machine-discontinuous fencing panels primarily used for construction sites.",
