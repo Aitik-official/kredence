@@ -19,6 +19,24 @@ const productCategories = [
   { label: "Lifecycle Care & Upgrades", to: "/services#lifecycle-care" },
 ];
 
+const socialLinks = [
+  {
+    Icon: Facebook,
+    href: "https://www.facebook.com/profile.php?id=6159281991304",
+    label: "Facebook",
+  },
+  {
+    Icon: Instagram,
+    href: "https://www.instagram.com/kredencesteel",
+    label: "Instagram",
+  },
+  {
+    Icon: Linkedin,
+    href: "https://www.linkedin.com/company/kredence-steel/",
+    label: "LinkedIn",
+  },
+];
+
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
@@ -34,12 +52,14 @@ const Footer = () => {
               Leading supplier and stockiest of high-quality steel products and building materials serving clients across UAE and GCC countries. Your trusted partner for premium steel trading and fencing solutions.
             </p>
             <div className="flex items-center gap-3">
-              {[Facebook, Instagram, Linkedin].map((Icon, index) => (
+              {socialLinks.map(({ Icon, href, label }) => (
                 <a
-                  key={index}
-                  href="#"
+                  key={label}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white transition hover:bg-white/20"
-                  aria-label="Social link"
+                  aria-label={label}
                 >
                   <Icon className="h-5 w-5" />
                 </a>
