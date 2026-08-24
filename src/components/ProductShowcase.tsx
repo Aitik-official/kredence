@@ -1,3 +1,6 @@
+import { Link } from "react-router-dom";
+import { getProductUrl } from "@/lib/utils";
+
 const products = [
   {
     id: "gi-coils",
