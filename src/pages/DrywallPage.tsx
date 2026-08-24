@@ -118,11 +118,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     id: "drywall",
     title: "Drywall Partition Systems",
     code: "G",
-    image: "https://th.bing.com/th/id/OIP.xLk6B-xqYPj4aXFPZ9fGpwHaHa?w=185&h=185&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
+    image: "/products/drywall-1.jpeg",
     images: [
-      "https://th.bing.com/th/id/OIP.xLk6B-xqYPj4aXFPZ9fGpwHaHa?w=185&h=185&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
-      "https://th.bing.com/th/id/OIP.xLk6B-xqYPj4aXFPZ9fGpwHaHa?w=185&h=185&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
-      "https://th.bing.com/th/id/OIP.xLk6B-xqYPj4aXFPZ9fGpwHaHa?w=185&h=185&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+      "/products/drywall-1.jpeg",
+      "/products/drywall-2.jpeg"
     ],
     category: "Interior",
     fullDescription: "Gypsum Board Partition Systems - Single, Double & Fire-Resistant Systems",

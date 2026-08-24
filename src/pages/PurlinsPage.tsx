@@ -118,11 +118,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     id: "purlins",
     title: "Z & C Purlins",
     code: "F",
-    image: "https://th.bing.com/th/id/OIP.vgSz2u3Lj2i6-3s_Lf5OmgHaHa?w=188&h=188&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
+    image: "/products/purlins-1.jpg",
     images: [
-      "https://th.bing.com/th/id/OIP.vgSz2u3Lj2i6-3s_Lf5OmgHaHa?w=188&h=188&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
-      "https://th.bing.com/th/id/OIP.vgSz2u3Lj2i6-3s_Lf5OmgHaHa?w=188&h=188&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
-      "https://th.bing.com/th/id/OIP.vgSz2u3Lj2i6-3s_Lf5OmgHaHa?w=188&h=188&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+      "/products/purlins-1.jpg",
+      "/products/purlins-2.jpg"
     ],
     category: "Structural",
     fullDescription: "Z and C purlins - Various sizes",

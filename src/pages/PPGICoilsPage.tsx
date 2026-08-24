@@ -118,11 +118,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     id: "ppgi-coils",
     title: "PPGI Color Coated Coils",
     code: "B",
-    image: "https://tse4.mm.bing.net/th/id/OIP.5OP1iIcHK5ASGZh1lGhHEgHaE8?rs=1&pid=ImgDetMain&o=7&rm=3",
+    image: "/products/ppgi-1.jpg",
     images: [
-      "https://th.bing.com/th/id/OIP.Dq3jyKFFvRyGndV7fKuv5QHaGr?w=205&h=185&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
-      "https://th.bing.com/th/id/OIP.9m6EB35U0pAYwKsZn8nt3AHaGR?w=224&h=190&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
-      "https://th.bing.com/th/id/OIP.J47uVmwze2-Qub8S4D7jBQHaHa?w=185&h=185&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+      "/products/ppgi-1.jpg",
+      "/products/ppgi-3.jpg",
+      "/products/ppgi-4.jpg"
     ],
     category: "Coated Steel",
     fullDescription: "Pre-Painted Galvanized Steel Coils in RAL colors (RAL 9002 & RAL 1001)",

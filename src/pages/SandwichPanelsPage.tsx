@@ -118,10 +118,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     id: "sandwich-panels",
     title: "Insulated Sandwich Panels",
     code: "C",
-    image: "/insulated-sandwich-panel-1.jpeg",
+    image: "/products/sandwich-1.jpeg",
     images: [
-      "/insulated-sandwich-panel-1.jpeg",
-      "/insulated-sandwich-panel-2.jpeg"
+      "/products/sandwich-1.jpeg",
+      "/products/sandwich-2.jpeg"
     ],
     category: "Panels",
     fullDescription: "Roof, Wall Panels & Cold Room Solutions with PUR/PIR Insulation",

@@ -3,26 +3,21 @@ import PageHeader from "@/components/PageHeader";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import heroFence from "@/assets/hero-fence.jpg";
 import { Link } from "react-router-dom";
 import { ArrowRight, Package, Building2, Layers, Grid, Wrench, Fence, Leaf } from "lucide-react";
-import metalFence from "@/assets/metal-fence.jpg";
-import vinylFence from "@/assets/vinyl-fence.jpg";
-import woodFence from "@/assets/wood-fence.jpg";
-import hoardingImage from "@/assets/HOARDING.webp";
 import { getProductUrl } from "@/lib/utils";
 
-// Product images from external sources for metal products
+// Local product images (hosted in /public/products to avoid broken external hotlinks)
 const productImages = {
-  "gi-coils": "/gicoils.jpeg",
-  "ppgi-coils": "https://tse4.mm.bing.net/th/id/OIP.5OP1iIcHK5ASGZh1lGhHEgHaE8?rs=1&pid=ImgDetMain&o=7&rm=3",
-  "sandwich-panels": "/insulated-sandwich-panel-1.jpeg",
-  "corrugated-sheets": "https://tse3.mm.bing.net/th/id/OIP.s2DkxQgR68QZJ0fYTlJ06QHaGK?pid=ImgDet&w=184&h=153&c=7&dpr=1.3&o=7&rm=3",
-  "decking-sheets": "https://tse3.mm.bing.net/th/id/OIP.mzsttxGsOjsheboi-5IW8wHaE0?rs=1&pid=ImgDetMain&o=7&rm=3",
-  "purlins": "https://tse3.mm.bing.net/th/id/OIP.DDTjoadU-onPFdrs1hPYfgHaFL?rs=1&pid=ImgDetMain&o=7&rm=3",
-  "drywall": "/dry1.jpeg",
-  "flashing": "https://th.bing.com/th/id/OIP.6bDleqwyT4ZuyLP3qZ0WxAHaEK?w=319&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
-  "skylights": "https://th.bing.com/th/id/OIP.h2UKoc1JmJPoDGs3kxpgNgHaFj?w=233&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
+  "gi-coils": "/products/gi-main.jpeg",
+  "ppgi-coils": "/products/ppgi-1.jpg",
+  "sandwich-panels": "/products/sandwich-1.jpeg",
+  "corrugated-sheets": "/products/corrugated-1.jpg",
+  "decking-sheets": "/products/decking-1.jpg",
+  "purlins": "/products/purlins-alt.png",
+  "drywall": "/products/drywall-1.jpeg",
+  "flashing": "/products/flashing-1.jpg",
+  "skylights": "/products/skylights-1.jpg",
 };
 
 export const products = [
@@ -33,9 +28,9 @@ export const products = [
     code: "A",
     image: productImages["gi-coils"],
     images: [
-      "https://th.bing.com/th/id/OIP.GEIrRHxVB5a76RlM3rEBZgHaHa?w=186&h=159&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
-      "https://th.bing.com/th/id/OIP.S4J1i40hd7c_glKzoQ7NvgHaEK?w=304&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
-      "https://th.bing.com/th/id/OIP.5ZzotRo79dkmhqwvbR7c1AHaHa?w=198&h=197&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+      "/products/gi-main.jpeg",
+      "/products/gi-2.jpg",
+      "/products/gi-3.jpg"
     ],
     category: "Steel Coils",
     fullDescription: "Hot Dip Galvanized Steel Coils & Sheets (ASTM A653, JIS G3302, EN 10346)",
@@ -72,9 +67,9 @@ export const products = [
     code: "B",
     image: productImages["ppgi-coils"],
     images: [
-      "https://th.bing.com/th/id/OIP.Dq3jyKFFvRyGndV7fKuv5QHaGr?w=205&h=185&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
-      "https://th.bing.com/th/id/OIP.9m6EB35U0pAYwKsZn8nt3AHaGR?w=224&h=190&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
-      "https://th.bing.com/th/id/OIP.J47uVmwze2-Qub8S4D7jBQHaHa?w=185&h=185&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+      "/products/ppgi-1.jpg",
+      "/products/ppgi-3.jpg",
+      "/products/ppgi-4.jpg"
     ],
     category: "Coated Steel",
     fullDescription: "Pre-Painted Galvanized Steel Coils in RAL colors (RAL 9002 & RAL 1001)",
@@ -104,10 +99,10 @@ export const products = [
     icon: Building2,
     title: "Insulated Sandwich Panels",
     code: "C",
-    image: "/insulated-sandwich-panel-1.jpeg",
+    image: productImages["sandwich-panels"],
     images: [
-      "/insulated-sandwich-panel-1.jpeg",
-      "/insulated-sandwich-panel-2.jpeg"
+      "/products/sandwich-1.jpeg",
+      "/products/sandwich-2.jpeg"
     ],
     category: "Panels",
     fullDescription: "Roof, Wall Panels & Cold Room Solutions with PUR/PIR Insulation",
@@ -142,9 +137,9 @@ export const products = [
     code: "D",
     image: productImages["corrugated-sheets"],
     images: [
-      "https://th.bing.com/th/id/OIP.6qo8D9180ARV21JUNCxsLAHaF3?w=236&h=187&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
-      "https://th.bing.com/th/id/OIP.tBoPF3_yMDNUjKOnUNeYsgHaHa?w=247&h=185&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
-      "https://th.bing.com/th/id/OIP.IsokQCrYMjK9Dxh0c4-kvAHaHa?w=181&h=181&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+      "/products/corrugated-1.jpg",
+      "/products/corrugated-2.jpg",
+      "/products/corrugated-3.jpg"
     ],
     category: "Sheets",
     fullDescription: "Single Skin Profile Corrugated Sheets - Sinusoidal, Trapezoidal, Box Profiles",
@@ -177,9 +172,9 @@ export const products = [
     code: "E",
     image: productImages["decking-sheets"],
     images: [
-      "https://tse3.mm.bing.net/th/id/OIP.mzsttxGsOjsheboi-5IW8wHaE0?rs=1&pid=ImgDetMain&o=7&rm=3",
-      "https://tse1.mm.bing.net/th/id/OIP.AWl924M9xV3pFtrNrxQDHAHaHa?pid=ImgDet&w=185&h=185&c=7&dpr=1.3&o=7&rm=3",
-      "https://th.bing.com/th/id/OIP.SQoFreyhHyD5S0WC59hcDgHaHa?w=159&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+      "/products/decking-1.jpg",
+      "/products/decking-2.jpg",
+      "/products/decking-3.jpg"
     ],
     category: "Decking",
     fullDescription: "Metal Floor Deck with Ribbed Profiles - 45/150 & 75/305",
@@ -214,9 +209,9 @@ export const products = [
     code: "F",
     image: productImages["purlins"],
     images: [
-      "https://tse3.mm.bing.net/th/id/OIP.DDTjoadU-onPFdrs1hPYfgHaFL?rs=1&pid=ImgDetMain&o=7&rm=3",
-      "https://tse4.mm.bing.net/th/id/OIP.WX3zVsRIzfeGriQYRt5tPQHaHa?pid=ImgDet&w=185&h=185&c=7&dpr=1.3&o=7&rm=3",
-      "https://th.bing.com/th/id/OIP.0jyrk8_kJGFK47rB22VmNQHaHa?w=190&h=184&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+      "/products/purlins-alt.png",
+      "/products/purlins-1.jpg",
+      "/products/purlins-2.jpg"
     ],
     category: "Structural",
     fullDescription: "Z & C Purlins produced in a variety of sizes with detailed punching options. Raw material conforms to ASTM A653 Grade 50 G90 (Structural Grade Galvanized Steel). Features Quick Fix Anti Sag Rods and a simple yet durable locking system for easy installation.",
@@ -248,9 +243,11 @@ export const products = [
     icon: Fence,
     title: "Fencing Panels & Hoardings",
     code: "G",
-    image: hoardingImage,
+    image: "/products/fencing-1.jpeg",
     images: [
-      hoardingImage,
+      "/products/fencing-1.jpeg",
+      "/products/fencing-2.jpeg",
+      "/products/fencing-3.jpeg"
     ],
     category: "Fencing",
     fullDescription: "Temporary Fencing Panels (Discontinuous) and Continuous Corrugated Fencing with complete accessories. Metal and machine-discontinuous fencing panels primarily used for construction sites.",
@@ -286,11 +283,11 @@ export const products = [
     icon: Leaf,
     title: "PVC Eco Fence",
     code: "H",
-    image: "https://th.bing.com/th/id/OIP._ZIpTl4QZ6GUyPj7jBb65QHaEe?w=237&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
+    image: "/products/pvc-2.jpeg",
     images: [
-      "https://th.bing.com/th/id/OIP._ZIpTl4QZ6GUyPj7jBb65QHaEe?w=237&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
-      "/pvceco2.jpeg",
-      "/pvceco1.jpeg"
+      "/products/pvc-2.jpeg",
+      "/products/pvc-3.jpeg",
+      "/products/pvc-1.jpg"
     ],
     category: "Fencing",
     fullDescription: "Best quality PVC ECO Fence available throughout UAE. Height range from 2.4mtr to 5.0mtr, customizable to customer specifications.",
@@ -324,11 +321,11 @@ export const products = [
     icon: Grid,
     title: "Wire Mesh Fence / Weld Mesh Fence / Heras Fence",
     code: "I",
-    image: "https://th.bing.com/th/id/OIP.JxEWk10jRGWah72w0OqNnwHaFj?w=267&h=200&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
+    image: "/products/wiremesh-1.jpg",
     images: [
-      "https://th.bing.com/th/id/OIP.JxEWk10jRGWah72w0OqNnwHaFj?w=267&h=200&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
-      "https://th.bing.com/th/id/OIP.wDxONbelQQ1ZUr7j6kJROAHaDn?w=299&h=170&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
-      "https://th.bing.com/th/id/OIP.k1cgHeNPDak7B7WvI0TcMQHaFj?w=276&h=207&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+      "/products/wiremesh-1.jpg",
+      "/products/wiremesh-2.jpg",
+      "/products/wiremesh-3.jpg"
     ],
     category: "Mesh",
     fullDescription: "Leading manufacturer and supplier of high-quality stainless steel wire mesh across the UAE. High-quality material for durability and corrosion resistance.",
@@ -360,11 +357,11 @@ export const products = [
     icon: Fence,
     title: "Chain Link Fence",
     code: "M",
-    image: "https://in-linefence.ca/wp-content/uploads/2020/05/Six-Reasons-to-Buy-a-Chain-Link-Fence-edit.jpg",
+    image: "/products/chainlink-1.jpg",
     images: [
-      "https://in-linefence.ca/wp-content/uploads/2020/05/Six-Reasons-to-Buy-a-Chain-Link-Fence-edit.jpg",
-      "https://tse1.mm.bing.net/th/id/OIP.yTpsVkezMVowQTQBUYBKMAAAAA?pid=ImgDet&w=185&h=185&c=7&dpr=1.3&o=7&rm=3",
-      "https://tse4.mm.bing.net/th/id/OIP.yHSDc2WaGBa9r9eDyTqgOAHaHa?pid=ImgDet&w=183&h=183&c=7&dpr=1.3&o=7&rm=3"
+      "/products/chainlink-1.jpg",
+      "/products/chainlink-3.jpg",
+      "/products/fencing-alt.webp"
     ],
     category: "Fencing",
     fullDescription: "Professional chain link fence solutions for property protection. Durable, cost-effective, and versatile fencing material also known as hurricane fence or diamond-mesh fence.",
@@ -505,10 +502,10 @@ export const products = [
     icon: Building2,
     title: "Drywall Partition Systems",
     code: "J",
-    image: "/dry1.jpeg",
+    image: productImages["drywall"],
     images: [
-      "/dry1.jpeg",
-      "/dry2.jpeg"
+      "/products/drywall-1.jpeg",
+      "/products/drywall-2.jpeg"
     ],
     category: "Systems",
     fullDescription: "Drywall Partition System Components comprising of Stud, Track, Furring Channel, Main Channel & Wall Angles. Metal partition system composed of ceiling, studs, and tracks.",
@@ -549,9 +546,9 @@ export const products = [
     code: "K",
     image: productImages["flashing"],
     images: [
-      "https://th.bing.com/th/id/OIP.6bDleqwyT4ZuyLP3qZ0WxAHaEK?w=319&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
-      "https://th.bing.com/th/id/OIP.g03VjAzT_2RHB3Wv01RjdQHaE8?w=265&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
-      "https://th.bing.com/th/id/OIP.wgnSU1eVXehhqHTsceVZTAHaE8?w=270&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+      "/products/flashing-1.jpg",
+      "/products/flashing-2.jpg",
+      "/products/flashing-3.jpg"
     ],
     category: "Accessories",
     fullDescription: "Flashing, Rain Gutter, Ridge Ventilator, and Sliding components from Kredence Steel's Profiles & Cladding Division.",
@@ -590,9 +587,9 @@ export const products = [
     code: "L",
     image: productImages["skylights"],
     images: [
-      "https://th.bing.com/th/id/OIP.h2UKoc1JmJPoDGs3kxpgNgHaFj?w=233&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
-      "https://th.bing.com/th/id/OIP.zR_WJ2pjMnytgp0E1lmkXAHaGM?w=194&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
-      "https://th.bing.com/th/id/OIP.mu9zyF90DYAXJ8k0U0CpCwHaHa?w=196&h=196&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+      "/products/skylights-1.jpg",
+      "/products/skylights-2.jpg",
+      "/products/skylights-3.jpg"
     ],
     category: "Skylights",
     fullDescription: "GRP (Glass Reinforced Plastic) Translucent Sheets for skylights. Daylight improves the internal environment and energy efficiency of buildings.",
@@ -645,9 +642,9 @@ const ProductsPage = () => {
         title="Premium Fencing Solutions"
         description="Explore our comprehensive range of high-quality fencing products including panels, PVC fences, and wire mesh solutions designed for durability, security, and performance."
         backgroundImages={[
-          "https://in-linefence.ca/wp-content/uploads/2020/05/Six-Reasons-to-Buy-a-Chain-Link-Fence-edit.jpg",
-          "https://tse2.mm.bing.net/th/id/OIP.W4r1StITsHHwI-OgsFV0lwHaFj?rs=1&pid=ImgDetMain&o=7&rm=3",
-          "https://tse2.mm.bing.net/th/id/OIP.GdzOOC0-BlpomlGj_TZRZAHaE7?w=1000&h=666&rs=1&pid=ImgDetMain&o=7&rm=3"
+          "/products/chainlink-1.jpg",
+          "/products/fencing-1.jpeg",
+          "/products/wiremesh-1.jpg"
         ]}
         variant="contrast"
       >

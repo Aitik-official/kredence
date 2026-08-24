@@ -118,11 +118,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     id: "corrugated-sheets",
     title: "Corrugated Color Sheets",
     code: "D",
-    image: "https://tse3.mm.bing.net/th/id/OIP.s2DkxQgR68QZJ0fYTlJ06QHaGK?pid=ImgDet&w=184&h=153&c=7&dpr=1.3&o=7&rm=3",
+    image: "/products/corrugated-1.jpg",
     images: [
-      "https://th.bing.com/th/id/OIP.6qo8D9180ARV21JUNCxsLAHaF3?w=236&h=187&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
-      "https://th.bing.com/th/id/OIP.tBoPF3_yMDNUjKOnUNeYsgHaHa?w=247&h=185&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
-      "https://th.bing.com/th/id/OIP.IsokQCrYMjK9Dxh0c4-kvAHaHa?w=181&h=181&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+      "/products/corrugated-1.jpg",
+      "/products/corrugated-2.jpg",
+      "/products/corrugated-3.jpg"
     ],
     category: "Sheets",
     fullDescription: "Single Skin Profile Corrugated Sheets - Sinusoidal, Trapezoidal, Box Profiles",

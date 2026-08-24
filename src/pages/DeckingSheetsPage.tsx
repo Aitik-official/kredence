@@ -118,11 +118,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     id: "decking-sheets",
     title: "Decking Sheets",
     code: "E",
-    image: "https://th.bing.com/th/id/OIP.hxUJX5Yq8PBgxqF5Ivn4GQHaFj?w=259&h=194&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
+    image: "/products/decking-1.jpg",
     images: [
-      "https://th.bing.com/th/id/OIP.hxUJX5Yq8PBgxqF5Ivn4GQHaFj?w=259&h=194&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
-      "https://th.bing.com/th/id/OIP.U-ZzqF0VpOcL7_JN9t3EAAHaHa?w=185&h=185&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
-      "https://th.bing.com/th/id/OIP.hxUJX5Yq8PBgxqF5Ivn4GQHaFj?w=259&h=194&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+      "/products/decking-1.jpg",
+      "/products/decking-2.jpg",
+      "/products/decking-3.jpg"
     ],
     category: "Sheets",
     fullDescription: "Steel decking sheets - Type A (36 mm), Type B (38 mm), Type C (61 mm), Type D (77 mm)",

@@ -1,4 +1,3 @@
-import hoardingImage from "@/assets/HOARDING.webp";
 import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -8,7 +7,7 @@ import { Link } from "react-router-dom";
 const heroSlides = [
   // Fence Slide 1
   {
-    image: hoardingImage,
+    image: "/products/fencing-1.jpeg",
     eyebrow: "Premium Fencing Solutions",
     title: "Fencing Panels & Hoardings",
     description: "Temporary and continuous corrugated fencing panels with complete accessories for construction sites, project boundaries, and secure site enclosures across UAE and GCC.",
@@ -17,7 +16,7 @@ const heroSlides = [
   },
   // Fence Slide 2
   {
-    image: "https://www.doogoodaustralia.com.au/upload/images/main(1).webp",
+    image: "/products/wiremesh-1.jpg",
     eyebrow: "Secure Your Property",
     title: "Wire Mesh Fence / Weld Mesh Fence / Heras Fence",
     description: "Leading manufacturer and supplier of high-quality stainless steel wire mesh across the UAE. Durable, corrosion-resistant fencing for industrial, commercial, and security applications.",
@@ -26,7 +25,7 @@ const heroSlides = [
   },
   // Metals Slide 1
   {
-    image: "https://www.gneesteel.com/d/images/image(297).png",
+    image: "/products/purlins-alt.png",
     eyebrow: "Premium Metal Products",
     title: "High-Quality Steel Coils & Sheets",
     description: "Discover our extensive range of metal products including GI coils, PPGI color coated coils, corrugated sheets, sandwich panels, purlins, and decking sheets. Meeting international standards for construction excellence.",
@@ -35,7 +34,7 @@ const heroSlides = [
   },
   // Metals Slide 2
   {
-    image: "https://tse4.mm.bing.net/th/id/OIP.5OP1iIcHK5ASGZh1lGhHEgHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    image: "/products/ppgi-1.jpg",
     eyebrow: "Premium Metal Products",
     title: "PPGI Color Coated Coils",
     description: "Pre-painted galvanized steel coils available in a wide range of RAL colors with superior weather resistance and aesthetic appeal for architectural and construction applications.",

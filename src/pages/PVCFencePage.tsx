@@ -118,11 +118,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     id: "pvc-fence",
     title: "PVC Eco Fence",
     code: "H",
-    image: "https://th.bing.com/th/id/OIP._ZIpTl4QZ6GUyPj7jBb65QHaEe?w=237&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
+    image: "/products/pvc-2.jpeg",
     images: [
-      "https://th.bing.com/th/id/OIP._ZIpTl4QZ6GUyPj7jBb65QHaEe?w=237&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
-      "/pvceco2.jpeg",
-      "/pvceco1.jpeg"
+      "/products/pvc-2.jpeg",
+      "/products/pvc-3.jpeg",
+      "/products/pvc-1.jpg"
     ],
     category: "Fencing",
     fullDescription: "Best quality PVC ECO Fence available throughout UAE. Height range from 2.4mtr to 5.0mtr, customizable to customer specifications.",

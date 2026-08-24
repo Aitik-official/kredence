@@ -118,11 +118,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     id: "wire-mesh",
     title: "Wire Mesh Fence / Weld Mesh Fence / Heras Fence",
     code: "I",
-    image: "https://th.bing.com/th/id/OIP.JxEWk10jRGWah72w0OqNnwHaFj?w=267&h=200&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
+    image: "/products/wiremesh-1.jpg",
     images: [
-      "https://th.bing.com/th/id/OIP.JxEWk10jRGWah72w0OqNnwHaFj?w=267&h=200&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
-      "https://th.bing.com/th/id/OIP.wDxONbelQQ1ZUr7j6kJROAHaDn?w=299&h=170&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
-      "https://th.bing.com/th/id/OIP.k1cgHeNPDak7B7WvI0TcMQHaFj?w=276&h=207&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+      "/products/wiremesh-1.jpg",
+      "/products/wiremesh-2.jpg",
+      "/products/wiremesh-3.jpg"
     ],
     category: "Mesh",
     fullDescription: "Leading manufacturer and supplier of high-quality stainless steel wire mesh across the UAE. High-quality material for durability and corrosion resistance.",

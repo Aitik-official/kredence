@@ -1,38 +1,34 @@
-import { Link } from "react-router-dom";
-import { getProductUrl } from "@/lib/utils";
-import hoardingImage from "@/assets/HOARDING.webp";
-
 const products = [
   {
     id: "gi-coils",
     title: "GI Mill Finish Coils",
     description:
       "High-quality galvanized steel coils and sheets designed for durability and performance in various industrial applications including transportation, construction, and home appliances.",
-    image: "/gicoils.jpeg",
+    image: "/products/gi-main.jpeg",
     highlight: true,
   },
   {
     id: "ppgi-coils",
     title: "PPGI Color Coated Coils",
-    image: "https://tse4.mm.bing.net/th/id/OIP.5OP1iIcHK5ASGZh1lGhHEgHaE8?rs=1&pid=ImgDetMain&o=7&rm=3",
+    image: "/products/ppgi-1.jpg",
     description: "Pre-painted galvanized steel coils available in a wide range of RAL colors with superior weather resistance and aesthetic appeal.",
   },
   {
     id: "wire-mesh",
     title: "Wire Mesh Fence / Weld Mesh Fence / Heras Fence",
-    image: "https://www.doogoodaustralia.com.au/upload/images/main(1).webp",
+    image: "/products/wiremesh-1.jpg",
     description: "Leading manufacturer and supplier of high-quality stainless steel wire mesh across the UAE. High-quality material for durability and corrosion resistance.",
   },
   {
     id: "fencing-panels",
     title: "Fencing Panels & Hoardings",
-    image: hoardingImage,
+    image: "/products/fencing-1.jpeg",
     description: "Comprehensive fencing solutions including temporary fencing panels, hoardings, and complete accessories for construction and security.",
   },
   {
     id: "pvc-fence",
     title: "PVC Eco Fence",
-    image: "https://th.bing.com/th/id/OIP._ZIpTl4QZ6GUyPj7jBb65QHaEe?w=237&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
+    image: "/products/pvc-2.jpeg",
     description: "Best quality PVC ECO Fence available throughout UAE. Height range from 2.4mtr to 5.0mtr, customizable to customer specifications.",
   },
 ];

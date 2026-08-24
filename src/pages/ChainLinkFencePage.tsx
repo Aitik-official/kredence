@@ -118,11 +118,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     id: "chain-link-fence",
     title: "Chain Link Fence",
     code: "M",
-    image: "https://in-linefence.ca/wp-content/uploads/2020/05/Six-Reasons-to-Buy-a-Chain-Link-Fence-edit.jpg",
+    image: "/products/chainlink-1.jpg",
     images: [
-      "https://in-linefence.ca/wp-content/uploads/2020/05/Six-Reasons-to-Buy-a-Chain-Link-Fence-edit.jpg",
-      "https://tse1.mm.bing.net/th/id/OIP.yTpsVkezMVowQTQBUYBKMAAAAA?pid=ImgDet&w=185&h=185&c=7&dpr=1.3&o=7&rm=3",
-      "https://tse4.mm.bing.net/th/id/OIP.yHSDc2WaGBa9r9eDyTqgOAHaHa?pid=ImgDet&w=183&h=183&c=7&dpr=1.3&o=7&rm=3"
+      "/products/chainlink-1.jpg",
+      "/products/chainlink-3.jpg",
+      "/products/fencing-alt.webp"
     ],
     category: "Fencing",
     fullDescription: "Professional chain link fence solutions for property protection. Durable, cost-effective, and versatile fencing material also known as hurricane fence or diamond-mesh fence.",

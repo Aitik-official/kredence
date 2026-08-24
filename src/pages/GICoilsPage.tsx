@@ -118,11 +118,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     id: "gi-coils",
     title: "GI Mill Finish Coils",
     code: "A",
-    image: "/gicoils.jpeg",
+    image: "/products/gi-main.jpeg",
     images: [
-      "https://th.bing.com/th/id/OIP.GEIrRHxVB5a76RlM3rEBZgHaHa?w=186&h=159&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
-      "https://th.bing.com/th/id/OIP.S4J1i40hd7c_glKzoQ7NvgHaEK?w=304&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
-      "https://th.bing.com/th/id/OIP.5ZzotRo79dkmhqwvbR7c1AHaHa?w=198&h=197&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+      "/products/gi-main.jpeg",
+      "/products/gi-2.jpg",
+      "/products/gi-3.jpg"
     ],
     category: "Steel Coils",
     fullDescription: "Hot Dip Galvanized Steel Coils & Sheets (ASTM A653, JIS G3302, EN 10346)",
